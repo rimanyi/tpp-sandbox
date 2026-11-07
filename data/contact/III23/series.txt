@@ -1,0 +1,22 @@
+# title: Thom series of III23 (all relative dimensions at once)
+# entity: III23
+# kind: series
+# local-algebra: C[x,y]/(x^2,xy,y^3)
+# tp-degree: 3l+5
+# source: not recorded on the old site (to be added)
+# convention: TPP 2026 (signs and orientations may differ from pre-2026 versions of the Thom series page)
+# retrieved-from: https://tpp.web.unc.edu/tp-linfinity/ (page modified 2026-08-02)
+# profile-1: \omega=(2,1)
+# box-1-1: Maple expression
+# profile-2: \omega=(1,2)
+# box-2-1: Maple expression
+# profile-3: \omega=(1,1,1)
+# box-3-1: Maple expression
+# Read into Maple with:  read "series.txt":
+Ts_III23_profile1_display := "\\(\\displaystyle F_{Q,(2,1)}=\\frac{2z_1}{(z_3-2z_1)(z_3-2z_2)}\\)":
+F_III23_profile1 := (2*z[1])/((z[3]-2*z[1])*(z[3]-2*z[2])):
+Ts_III23_profile2_display := "\\(\\displaystyle F_{Q,(1,2)}=\\frac{z_2}{(z_2-2z_1)(z_3-2z_1)}\\)":
+F_III23_profile2 := (z[2])/((z[2]-2*z[1])*(z[3]-2*z[1])):
+Ts_III23_profile3_display := "\\(\\displaystyle F_{Q,(1,1,1)}=\\frac{1}{z_3-2z_1}\\)":
+F_III23_profile3 := (1)/(z[3]-2*z[1]):
+Ts_III23_explicit_tex := "\\sum_{i=0}^\\infty 2^{i+1}\\Delta_{i+1,1,-i}":

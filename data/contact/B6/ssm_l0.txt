@@ -1,0 +1,13 @@
+# title: SSM-Thom polynomial of B6, relative dimension l=0
+# entity: B6
+# kind: ssm
+# l: 0
+# codimension: 8   (the lowest-degree part is the Thom polynomial)
+# computed-up-to-degree: 8
+# variables: t = cohomological degree; c[i], s[[lambda]] as for Thom polynomials
+# source: not recorded on the old site (to be added)
+# convention: TPP 2025
+# retrieved-from: https://tpp.web.unc.edu/ssm-thom-polynomials-for-l0/ (page modified 2025-05-31)
+# Read into Maple with:  read "ssm_l0.txt":
+SSM_B6_l0_monomial := +t^8*( -2*c[1]^3*c[2]*c[3] +2*c[1]^2*c[2]^3 -7*c[1]^2*c[2]*c[4] +2*c[1]^2*c[3]^2 +4*c[1]*c[2]^2*c[3] +c[2]^4 -9*c[1]*c[2]*c[5] +5*c[1]*c[3]*c[4] +2*c[2]^2*c[4] +2*c[2]*c[3]^2 -4*c[2]*c[6] +3*c[3]*c[5] +c[4]^2 ):
+SSM_B6_l0_schur := +t^8*( 2*s[[2,2,2,1,1]] +3*s[[2,2,2,2]] +2*s[[3,2,1,1,1]] +15*s[[3,2,2,1]] +12*s[[3,3,1,1]] +21*s[[3,3,2]] +12*s[[4,2,1,1]] +25*s[[4,2,2]] +40*s[[4,3,1]] +20*s[[4,4]] +22*s[[5,2,1]] +32*s[[5,3]] +12*s[[6,2]] ):

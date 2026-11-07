@@ -1,0 +1,13 @@
+# title: SSM-Thom polynomial of I35, relative dimension l=0
+# entity: I35
+# kind: ssm
+# l: 0
+# codimension: 8   (the lowest-degree part is the Thom polynomial)
+# computed-up-to-degree: 8
+# variables: t = cohomological degree; c[i], s[[lambda]] as for Thom polynomials
+# source: not recorded on the old site (to be added)
+# convention: TPP 2025
+# retrieved-from: https://tpp.web.unc.edu/ssm-thom-polynomials-for-l0/ (page modified 2025-05-31)
+# Read into Maple with:  read "ssm_l0.txt":
+SSM_I35_l0_monomial := +t^8*( -2*c[1]^5*c[3] +2*c[1]^4*c[2]^2 -11*c[1]^4*c[4] +8*c[1]^3*c[2]*c[3] +3*c[1]^2*c[2]^3 -26*c[1]^3*c[5] +7*c[1]^2*c[2]*c[4] +13*c[1]^2*c[3]^2 +10*c[1]*c[2]^2*c[3] -4*c[2]^4 -24*c[1]^2*c[6] -2*c[1]*c[2]*c[5] +34*c[1]*c[3]*c[4] -32*c[2]^2*c[4] +24*c[2]*c[3]^2 -40*c[2]*c[6] +60*c[3]*c[5] -20*c[4]^2 ):
+SSM_I35_l0_schur := +t^8*( 2*s[[2,2,1,1,1,1]] +9*s[[2,2,2,1,1]] +3*s[[2,2,2,2]] +22*s[[3,2,1,1,1]] +48*s[[3,2,2,1]] +66*s[[3,3,1,1]] +99*s[[3,3,2]] +82*s[[4,2,1,1]] +75*s[[4,2,2]] +232*s[[4,3,1]] +76*s[[4,4]] +122*s[[5,2,1]] +232*s[[5,3]] +60*s[[6,2]] ):

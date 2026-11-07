@@ -1,0 +1,14 @@
+# title: Thom series of A2 (all relative dimensions at once)
+# entity: A2
+# kind: series
+# local-algebra: C[x]/(x^3)
+# tp-degree: 2l+2
+# source: not recorded on the old site (to be added)
+# convention: TPP 2026 (signs and orientations may differ from pre-2026 versions of the Thom series page)
+# retrieved-from: https://tpp.web.unc.edu/tp-linfinity/ (page modified 2026-08-02)
+# profile-1: \omega=(1,1)
+# box-1-1: Maple expression
+# Read into Maple with:  read "series.txt":
+Ts_A2_profile1_display := "\\(\\displaystyle F_{Q,(1,1)}=\\frac{1}{z_2-2z_1}\\)":
+F_A2_profile1 := (1)/(z[2]-2*z[1]):
+Ts_A2_explicit_tex := "\\sum_{i=0}^\\infty 2^i\\Delta_{i,-i}":

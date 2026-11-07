@@ -1,0 +1,14 @@
+# title: Thom series of A3 (all relative dimensions at once)
+# entity: A3
+# kind: series
+# local-algebra: C[x]/(x^4)
+# tp-degree: 3l+3
+# source: not recorded on the old site (to be added)
+# convention: TPP 2026 (signs and orientations may differ from pre-2026 versions of the Thom series page)
+# retrieved-from: https://tpp.web.unc.edu/tp-linfinity/ (page modified 2026-08-02)
+# profile-1: \omega=(1,1,1)
+# box-1-1: Maple expression
+# Read into Maple with:  read "series.txt":
+Ts_A3_profile1_display := "\\(\\displaystyle F_{Q,(1,1,1)}=\\frac{1}{(z_2-2z_1)(z_3-2z_1)(z_3-z_1-z_2)}\\)":
+F_A3_profile1 := (1)/((z[2]-2*z[1])*(z[3]-2*z[1])*(z[3]-z[1]-z[2])):
+Ts_A3_explicit_tex := "a_{0,0}=0":

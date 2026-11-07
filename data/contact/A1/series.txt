@@ -1,0 +1,14 @@
+# title: Thom series of A1 (all relative dimensions at once)
+# entity: A1
+# kind: series
+# local-algebra: C[x]/(x^2)
+# tp-degree: l+1
+# source: not recorded on the old site (to be added)
+# convention: TPP 2026 (signs and orientations may differ from pre-2026 versions of the Thom series page)
+# retrieved-from: https://tpp.web.unc.edu/tp-linfinity/ (page modified 2026-08-02)
+# profile-1: \omega=(1)
+# box-1-1: Maple expression
+# Read into Maple with:  read "series.txt":
+Ts_A1_profile1_display := "\\(F_{Q,(1)}=1\\)":
+F_A1_profile1 := 1:
+Ts_A1_explicit_tex := "d_0=\\Delta_0":

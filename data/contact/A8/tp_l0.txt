@@ -1,0 +1,12 @@
+# title: Thom polynomial of A8, relative dimension l=0
+# entity: A8
+# kind: tp
+# l: 0
+# codimension: 8
+# variables: c[i] = quotient Chern classes (see Conventions); s[[lambda]] = Schur polynomial in the c[i]
+# source: R. Rimanyi: Thom polynomials, symmetries and incidences of singularities; Inv. Math. 143, 499-521 (2001) This contact singularity is open in its Thom-Boardman class.
+# convention: TPP 2025
+# retrieved-from: https://tpp.web.unc.edu/thom-polynomials-relative-dimension-l0/ (page modified 2025-06-12)
+# Read into Maple with:  read "tp_l0.txt":
+Tp_A8_l0_monomial := c[1]^8 +28*c[1]^6*c[2] +182*c[1]^5*c[3] +140*c[1]^4*c[2]^2 +952*c[1]^4*c[4] +868*c[1]^3*c[2]*c[3] +140*c[1]^2*c[2]^3 +3383*c[1]^3*c[5] +2229*c[1]^2*c[2]*c[4] +642*c[1]^2*c[3]^2 +501*c[1]*c[2]^2*c[3] +14*c[2]^4 +7552*c[1]^2*c[6] +3455*c[1]*c[2]*c[5] +1559*c[1]*c[3]*c[4] +364*c[2]^2*c[4] +202*c[2]*c[3]^2 +9468*c[1]*c[7] +2314*c[2]*c[6] +954*c[3]*c[5] +332*c[4]^2 +5040*c[8]:
+Tp_A8_l0_schur := s[[1,1,1,1,1,1,1,1]] +35*s[[2,1,1,1,1,1,1]] +300*s[[2,2,1,1,1,1]] +840*s[[2,2,2,1,1]] +588*s[[2,2,2,2]] +511*s[[3,1,1,1,1,1]] +3732*s[[3,2,1,1,1]] +6759*s[[3,2,2,1]] +8031*s[[3,3,1,1]] +8412*s[[3,3,2]] +4025*s[[4,1,1,1,1]] +20259*s[[4,2,1,1]] +17484*s[[4,2,2]] +31584*s[[4,3,1]] +12964*s[[4,4]] +18424*s[[5,1,1,1]] +54822*s[[5,2,1]] +39764*s[[5,3]] +48860*s[[6,1,1]] +63808*s[[6,2]] +69264*s[[7,1]] +40320*s[[8]]:

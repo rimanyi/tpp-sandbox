@@ -1,0 +1,42 @@
+# Large Algebra Collider: elementary splittings of algebras (one rule per line).
+# Migrated from tpp.web.unc.edu/large-algebra-collider-lac/ ; entity pages read their splittings from here.
+A1 -> 2*A0
+A2 -> A0+A1
+III22 -> A2
+A3 -> 2*A1, A0+A2
+I22 -> III22, A3
+III23 -> I22, A0+III22
+C3 -> III23
+A4 -> A1+A2, A0+A3
+I23 -> III23, A4, A0+I22
+III24 -> I23, A1+III22, A0+III23
+III33 -> I23, A0+III23
+B4 -> III33, III24
+C41 -> I23 (l=2) --- C41 -> I23, C3 (l=3)
+C42 -> C41, B4
+C43 -> C42, A0+C3
+D4 -> ?
+A5 -> 2*A2, A1+A3, A0+A4
+I24 -> III24, A5, A1+I22, A0+I23
+I33 -> III33, A5, A0+I23
+III25 -> I24, A2+III22, A1+III23, A0+III24
+III34 -> I33, I24, A1+III23, A0+III33, A0+III24
+B51 -> B4, I33, I24
+B52 -> B51, III34, III25, A0+B4
+B53 -> B52, 2*III22
+B54 -> B52
+C51 -> B4, I24, A0+III33  (l=1) ---  C51 -> C42, I24, A0+III33 (l=2)
+C52 -> C51, B51, III34, A0+B4
+C53 -> C42, B51, A0+C41
+C54 -> C52, B52
+C55 -> C53, C52, A0+C42
+C56 -> C53, B52, A0+C42
+C57 -> C56, C55, C54
+A6 -> A2+A3, A1+A4, A0+A5
+I25 -> III25, A6, A2+I22, A1+I23, A0+I24
+I34 -> III34, A6, A1+I23, A0+I33, A0+I24
+III26 -> I25, A3+III22, A2+III23, A1+III24, A0+III25
+III35 -> I34, I25, A2+III23, A1+III33, A0+III34, A0+III25
+III44 -> I34, A1+III24, A0+III34
+B6 -> B52, I34, I25, A0+B51
+C6 -> C52, B52, I34, I25, A1+III33, A0+C51, A0+III34 (l=1) --- C6 -> C56, C55, I34, I25, A1+III33, A0+C51, A0+III34 (l=2)

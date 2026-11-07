@@ -1,0 +1,12 @@
+# title: Target SSM residue (S-)polynomial of 11A0, l=1 (version of April 2025)
+# entity: 11A0
+# kind: target_ssm
+# l: 1
+# codimension: 10(+1) (in the target)
+# variables: t = cohomological degree; s[[i1,i2,...]] = f_*(c_{i1} c_{i2} ...), sc[[i1,...]] = f_*(Schur(i1,...)) (pushforward notation, see Conventions)
+#   (this older page wrote s[i,j] for s[[i,j]]; normalised here)
+# source: not recorded on the old site (to be added)
+# note: could not be compared automatically with the 2025-06 target SSM page (degrees 0..0 vs 11..12).
+# retrieved-from: https://tpp.web.unc.edu/441-2/ (page modified 2025-04-12)
+# Read into Maple with:  read "target_ssm_l1.v2025-04.txt":
+TargetSSM_M_11A0_l1_v2025_04 := ?:

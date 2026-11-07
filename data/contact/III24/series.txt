@@ -1,0 +1,27 @@
+# title: Thom series of III24 (all relative dimensions at once)
+# entity: III24
+# kind: series
+# local-algebra: C[x,y]/(x^2,xy,y^4)
+# tp-degree: 4l+6
+# source: not recorded on the old site (to be added)
+# note: Filtration note: Kazarian lists the dimension vectors \((1,2,1)\), \((1,1,2)\), \((0,1,0,1,1,1)\), and \((0,0,1,0,1,1,0,0,1)\). The last two both reduce to \((1,1,1,1)\) after zero entries are suppressed, but they retain different quasihomogeneous degree data.
+#   Explicit Thom series: To be added.
+# convention: TPP 2026 (signs and orientations may differ from pre-2026 versions of the Thom series page)
+# retrieved-from: https://tpp.web.unc.edu/tp-linfinity/ (page modified 2026-08-02)
+# profile-1: \omega=(1,2,1)
+# box-1-1: Maple expression
+# profile-2: \omega=(1,1,2)
+# box-2-1: Maple expression
+# profile-3: \omega=(1,1,1,1)
+# box-3-1: Maple expression
+# profile-4: \omega=(1,1,1,1)
+# box-4-1: Maple expression
+# Read into Maple with:  read "series.txt":
+Ts_III24_profile1_display := "\\(\\displaystyle F_{III_{24},(1,2,1)}=\\frac{z_2}{(z_2-2z_1)(z_3-2z_1)(z_4-2z_1)(z_4-z_1-z_2)(z_4-z_1-z_3)}\\)":
+F_III24_profile1 := (z[2])/((z[2]-2*z[1])*(z[3]-2*z[1])*(z[4]-2*z[1])*(z[4]-z[1]-z[2])*(z[4]-z[1]-z[3])):
+Ts_III24_profile2_display := "\\(\\displaystyle F_{III_{24},(1,1,2)}=\\frac{z_3}{(z_2-2z_1)(z_3-2z_1)(z_4-2z_1)(z_3-z_1-z_2)(z_4-z_1-z_2)}\\)":
+F_III24_profile2 := (z[3])/((z[2]-2*z[1])*(z[3]-2*z[1])*(z[4]-2*z[1])*(z[3]-z[1]-z[2])*(z[4]-z[1]-z[2])):
+Ts_III24_profile3_display := "\\(\\displaystyle F_{III_{24}}=\\frac{1}{(z_2-2z_1)(z_3-2z_1)(z_4-2z_1)(z_4-z_1-z_2)}\\)":
+F_III24_profile3 := (1)/((z[2]-2*z[1])*(z[3]-2*z[1])*(z[4]-2*z[1])*(z[4]-z[1]-z[2])):
+Ts_III24_profile4_display := "\\(\\displaystyle F_{III_{24}}=\\frac{1}{(z_3-2z_1)(z_4-2z_1)(z_4-z_1-z_2)(z_4-z_1-z_3)}\\)":
+F_III24_profile4 := (1)/((z[3]-2*z[1])*(z[4]-2*z[1])*(z[4]-z[1]-z[2])*(z[4]-z[1]-z[3])):

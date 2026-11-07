@@ -1,0 +1,12 @@
+# title: Thom polynomial of A0, relative dimension l=0
+# entity: A0
+# kind: tp
+# l: 0
+# codimension: 0
+# variables: c[i] = quotient Chern classes (see Conventions); s[[lambda]] = Schur polynomial in the c[i]
+# source: Implicit function theorem.
+# convention: TPP 2025
+# retrieved-from: https://tpp.web.unc.edu/thom-polynomials-relative-dimension-l0/ (page modified 2025-06-12)
+# Read into Maple with:  read "tp_l0.txt":
+Tp_A0_l0_monomial := 1:
+Tp_A0_l0_schur := s[[0]]:

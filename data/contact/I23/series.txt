@@ -1,0 +1,19 @@
+# title: Thom series of I23 (all relative dimensions at once)
+# entity: I23
+# kind: series
+# local-algebra: C[x,y]/(xy,x^2+y^3)
+# tp-degree: 4l+5
+# source: not recorded on the old site (to be added)
+# note: Filtration note: Kazarian lists the dimension vectors \((2,1,1)\) and \((0,1,1,1,0,1)\). In the second presentation, suppressing zero entries gives \((1,1,1,1)\), while the nonzero graded pieces occur in degrees \((2,3,4,6)\).
+#   Explicit Thom series: To be added.
+# convention: TPP 2026 (signs and orientations may differ from pre-2026 versions of the Thom series page)
+# retrieved-from: https://tpp.web.unc.edu/tp-linfinity/ (page modified 2026-08-02)
+# profile-1: \omega=(2,1,1)
+# box-1-1: Maple expression
+# profile-2: \omega=(1,1,1,1)
+# box-2-1: Maple expression
+# Read into Maple with:  read "series.txt":
+Ts_I23_profile1_display := "\\(\\displaystyle F_{I_{23},(2,1,1)}=\\frac{z_1((z_4-2z_1-z_2)(z_4-z_1-2z_2)-(z_4-z_2-z_3)(z_4-z_1-z_3))}{(z_3-2z_1)(z_4-2z_1)(z_3-z_1-z_2)(z_4-z_1-z_2)(z_4-z_1-z_3)(z_3-2z_2)(z_4-2z_2)(z_4-z_2-z_3)}\\)":
+F_I23_profile1 := (z[1]*((z[4]-2*z[1]-z[2])*(z[4]-z[1]-2*z[2])-(z[4]-z[2]-z[3])*(z[4]-z[1]-z[3])))/((z[3]-2*z[1])*(z[4]-2*z[1])*(z[3]-z[1]-z[2])*(z[4]-z[1]-z[2])*(z[4]-z[1]-z[3])*(z[3]-2*z[2])*(z[4]-2*z[2])*(z[4]-z[2]-z[3])):
+Ts_I23_profile2_display := "\\(\\displaystyle F_{I_{23}}=\\frac{1}{(z_3-2z_1)(z_4-2z_1)(z_4-z_1-z_2)(z_4-z_1-z_3)(z_4-2z_2)}\\)":
+F_I23_profile2 := (1)/((z[3]-2*z[1])*(z[4]-2*z[1])*(z[4]-z[1]-z[2])*(z[4]-z[1]-z[3])*(z[4]-2*z[2])):

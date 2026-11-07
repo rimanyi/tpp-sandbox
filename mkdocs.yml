@@ -1,0 +1,122 @@
+site_name: Thom Polynomial Portal
+site_description: A registry of known Thom polynomials of singularities (sandbox draft)
+site_author: Richárd Rimányi
+site_url: https://rimanyi.github.io/tpp-sandbox/
+repo_url: https://github.com/rimanyi/tpp-sandbox
+repo_name: tpp-sandbox
+edit_uri: ""
+docs_dir: docs
+
+theme:
+  name: material
+  custom_dir: overrides
+  language: en
+  font:
+    text: IBM Plex Sans
+    code: IBM Plex Mono
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: blue grey
+      accent: teal
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: blue grey
+      accent: teal
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+  features:
+    - navigation.sections
+    - navigation.top
+    - toc.follow
+    - search.suggest
+    - search.highlight
+
+plugins:
+  - search
+
+markdown_extensions:
+  - toc:
+      permalink: true
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.arithmatex:
+      generic: true
+
+extra_css:
+  - stylesheets/tpp.css
+
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-chtml.js
+  - javascripts/tpp.js
+
+nav:
+  - Home: index.md
+  - Background:
+      - What is a Thom polynomial: background/thom-polynomials.md
+      - SSM-Thom polynomials: background/ssm.md
+      - K-theoretic Thom polynomials: background/k-theory.md
+      - Conventions and notation: background/conventions.md
+  - Singularities:
+      - Contact singularities: singularities/contact/index.md
+      - Multi-singularities: singularities/multi/index.md
+      - The empty multi-singularity: singularities/multi/empty.md
+      - Multi-singularities in the Mather range: singularities/multi/mather-range.md
+      - Multi-singularities, l = 1: singularities/multi/list-l1.md
+      - Thom–Boardman classes: singularities/thom-boardman.md
+  - Local algebras:
+      - Hierarchy: local-algebras/hierarchy.md
+      - Symmetries: local-algebras/symmetries.md
+      - Large Algebra Collider: local-algebras/lac.md
+      - 7-dimensional algebras: local-algebras/7-dimensional.md
+  - Tables:
+      - Overview: tables/index.md
+      - State of knowledge: tables/knowledge.md
+      - Thom polynomials:
+          - l = 0: tables/tp-l0.md
+          - l = 1: tables/tp-l1.md
+          - l = 2: tables/tp-l2.md
+          - l = 3: tables/tp-l3.md
+          - l = 4: tables/tp-l4.md
+          - l = 5: tables/tp-l5.md
+      - Thom series: tables/thom-series.md
+      - SSM-Thom polynomials:
+          - l = 0: tables/ssm-l0.md
+          - l = 1: tables/ssm-l1.md
+          - l = 2: tables/ssm-l2.md
+          - l = 3: tables/ssm-l3.md
+          - l = 4: tables/ssm-l4.md
+          - l = 5: tables/ssm-l5.md
+          - l = 6: tables/ssm-l6.md
+      - K-theoretic: tables/ktp.md
+      - Multi-singularities:
+          - Target SSM, l = 1: tables/target-ssm-l1.md
+          - Target SSM, l = 2: tables/target-ssm-l2.md
+          - Target SSM, l = 3: tables/target-ssm-l3.md
+          - Target SSM, l = 4: tables/target-ssm-l4.md
+          - Target SSM, l = 5: tables/target-ssm-l5.md
+          - Source SSM, l = 1: tables/source-ssm-l1.md
+  - Derived invariants:
+      - Image Milnor numbers: derived/image-milnor-numbers.md
+  - Downloads: downloads.md
+  - About: about.md
+
+not_in_nav: |
+  /singularities/contact/*.md
+  /singularities/multi/*.md
+
+validation:
+  nav:
+    omitted_files: info
+  links:
+    not_found: warn
+    anchors: info

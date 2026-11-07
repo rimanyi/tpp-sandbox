@@ -1,0 +1,12 @@
+# title: Thom polynomial of C52, relative dimension l=2
+# entity: C52
+# kind: tp
+# l: 2
+# codimension: 18
+# variables: c[i] = quotient Chern classes (see Conventions); s[[lambda]] = Schur polynomial in the c[i]
+# source: not recorded on the old site (to be added)
+# convention: TPP 2025
+# retrieved-from: https://tpp.web.unc.edu/thom-polynomials-relative-dimension-l2/ (page modified 2025-05-21)
+# Read into Maple with:  read "tp_l2.txt":
+Tp_C52_l2_monomial := -10*c[1]^2*c[3]*c[5]*c[8] +10*c[1]^2*c[3]*c[6]*c[7] +10*c[1]^2*c[4]^2*c[8] -10*c[1]^2*c[4]*c[5]*c[7] -10*c[1]^2*c[4]*c[6]^2 +10*c[1]^2*c[5]^2*c[6] -6*c[1]*c[2]*c[3]*c[5]*c[7] +6*c[1]*c[2]*c[3]*c[6]^2 +6*c[1]*c[2]*c[4]^2*c[7] -12*c[1]*c[2]*c[4]*c[5]*c[6] +6*c[1]*c[2]*c[5]^3 -30*c[1]*c[3]*c[5]*c[9] +30*c[1]*c[3]*c[7]^2 +30*c[1]*c[4]^2*c[9] -60*c[1]*c[4]*c[6]*c[7] +30*c[1]*c[5]*c[6]^2 -8*c[2]*c[3]*c[5]*c[8] +8*c[2]*c[3]*c[6]*c[7] +8*c[2]*c[4]^2*c[8] -8*c[2]*c[4]*c[5]*c[7] -8*c[2]*c[4]*c[6]^2 +8*c[2]*c[5]^2*c[6] +6*c[3]^2*c[5]*c[7] -6*c[3]^2*c[6]^2 -6*c[3]*c[4]^2*c[7] +12*c[3]*c[4]*c[5]*c[6] -6*c[3]*c[5]^3 -20*c[3]*c[5]*c[10] -36*c[3]*c[6]*c[9] +56*c[3]*c[7]*c[8] +20*c[4]^2*c[10] +36*c[4]*c[5]*c[9] -20*c[4]*c[6]*c[8] -56*c[4]*c[7]^2 -36*c[5]^2*c[8] +56*c[5]*c[6]*c[7]:
+Tp_C52_l2_schur := 6*s[[5,5,5,2,1]] +16*s[[6,5,5,1,1]] +24*s[[6,5,5,2]] +64*s[[6,6,5,1]] +40*s[[6,6,6]] +64*s[[7,5,5,1]] +150*s[[7,6,5]] +68*s[[8,5,5]]:

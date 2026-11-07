@@ -1,0 +1,16 @@
+# title: Thom series of C42 (all relative dimensions at once)
+# entity: C42
+# kind: series
+# local-algebra: C[x,y,z]/(x^2,y^2,z^2,xz,yz)
+# tp-degree: 4l+8
+# source: not recorded on the old site (to be added)
+# note: Filtration note: Section 8.6 uses the refined dimension vector \((0,2,1,1)\). After suppressing zero entries, this is the profile \(\omega=(2,1,1)\). For this refined filtration, a generic algebra is already of type \(\Phi_{3,1}\), so no additional degeneracy-locus numerator is needed.
+#   Coefficient recursion: The coefficients \(((i_1,\ldots,i_s))\) are zero unless \(i_1>\cdots>i_s\geq0\), and \(((0))=1\). If \(i_s>0\), then \(s((i_1,\ldots,i_s))=2\sum_{a=1}^s((i_1,\ldots,i_a-1,\ldots,i_s))\). If \(i_s=0\), the left-hand side minus the same sum equals \(((i_1,\ldots,i_{s-1}))\).
+#   Explicit Thom series: \(\displaystyle \text{Ts}_{\Phi_{3,1}}=\sum_{i>j\geq1}((i,j))\Delta_{i,j+1,2,1-i-j}.\)
+# convention: TPP 2026 (signs and orientations may differ from pre-2026 versions of the Thom series page)
+# retrieved-from: https://tpp.web.unc.edu/tp-linfinity/ (page modified 2026-08-02)
+# profile-1: \omega=(2,1,1)
+# box-1-1: Maple expression
+# Read into Maple with:  read "series.txt":
+Ts_C42_profile1_display := "\\(\\displaystyle F_{\\Phi_{3,1},(2,1,1)}=\\frac{1}{2(z_4-2z_1)(z_4-z_1-z_2)}\\)":
+F_C42_profile1 := (1)/(2*(z[4]-2*z[1])*(z[4]-z[1]-z[2])):

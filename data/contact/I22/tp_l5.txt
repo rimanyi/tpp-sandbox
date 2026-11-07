@@ -1,0 +1,12 @@
+# title: Thom polynomial of I22, relative dimension l=5
+# entity: I22
+# kind: tp
+# l: 5
+# codimension: 19
+# variables: c[i] = quotient Chern classes (see Conventions); s[[lambda]] = Schur polynomial in the c[i]
+# source: not recorded on the old site (to be added)
+# convention: TPP 2025
+# retrieved-from: https://tpp.web.unc.edu/thom-polynomials-relative-dimension-l5/ (page modified 2025-05-21)
+# Read into Maple with:  read "tp_l5.txt":
+Tp_I22_l5_monomial := -16*c[1]*c[6]*c[12] +9*c[1]*c[7]*c[11] +4*c[1]*c[8]*c[10] +3*c[1]*c[9]^2 -8*c[2]*c[6]*c[11] +5*c[2]*c[7]*c[10] +3*c[2]*c[8]*c[9] -4*c[3]*c[6]*c[10] +3*c[3]*c[7]*c[9] +c[3]*c[8]^2 -2*c[4]*c[6]*c[9] +2*c[4]*c[7]*c[8] -c[5]*c[6]*c[8] +c[5]*c[7]^2 -32*c[6]*c[13] +17*c[7]*c[12] +5*c[8]*c[11] +10*c[9]*c[10]:
+Tp_I22_l5_schur := 10*s[[9,8,2]] +10*s[[9,9,1]] +15*s[[10,7,2]] +25*s[[10,8,1]] +35*s[[10,9]] +31*s[[11,7,1]] +56*s[[11,8]] +63*s[[12,7]] +s[[7,7,5]] +3*s[[8,7,4]] +3*s[[8,8,3]] +7*s[[9,7,3]]:

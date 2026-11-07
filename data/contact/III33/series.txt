@@ -1,0 +1,19 @@
+# title: Thom series of III33 (all relative dimensions at once)
+# entity: III33
+# kind: series
+# local-algebra: C[x,y]/(x^3,xy,y^3)
+# tp-degree: 4l+6
+# source: not recorded on the old site (to be added)
+# note: Filtration note: Kazarian lists the dimension vectors \((2,2)\) and \((0,0,1,1,0,1,0,1)\). The second reduces to \((1,1,1,1)\), with nonzero graded pieces in degrees \((3,4,6,8)\). Its factor \(1/2\) is the normalization appearing in Kazarian's table.
+#   Explicit Thom series: To be added.
+# convention: TPP 2026 (signs and orientations may differ from pre-2026 versions of the Thom series page)
+# retrieved-from: https://tpp.web.unc.edu/tp-linfinity/ (page modified 2026-08-02)
+# profile-1: \omega=(2,2)
+# box-1-1: Maple expression
+# profile-2: \omega=(1,1,1,1)
+# box-2-1: Maple expression
+# Read into Maple with:  read "series.txt":
+Ts_III33_profile1_display := "\\(\\displaystyle F_{III_{33},(2,2)}=\\frac{z_1z_3}{(z_3-2z_1)(z_4-2z_1)(z_3-z_1-z_2)(z_4-z_1-z_2)(z_3-2z_2)(z_4-2z_2)}\\)":
+F_III33_profile1 := (z[1]*z[3])/((z[3]-2*z[1])*(z[4]-2*z[1])*(z[3]-z[1]-z[2])*(z[4]-z[1]-z[2])*(z[3]-2*z[2])*(z[4]-2*z[2])):
+Ts_III33_profile2_display := "\\(\\displaystyle F_{III_{33}}=\\frac{1}{2(z_3-2z_1)(z_4-2z_1)(z_4-z_1-z_2)(z_4-2z_2)}\\)":
+F_III33_profile2 := (1)/(2*(z[3]-2*z[1])*(z[4]-2*z[1])*(z[4]-z[1]-z[2])*(z[4]-2*z[2])):

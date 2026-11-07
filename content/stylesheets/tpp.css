@@ -1,0 +1,93 @@
+:root {
+  --tpp-accent: #0f5e6e;
+  --tpp-kind: #6b3a7d;
+  --tpp-data: #8a5a00;
+  --tpp-data-bg: #fff3d6;
+  --tpp-note-bg: #f1e8f5;
+  --tpp-warn: #9b2c2c;
+  --tpp-warn-bg: #fdecec;
+  --tpp-line: #d8dee8;
+  --tpp-soft: #eef2f6;
+  --tpp-code-bg: #f3f5f8;
+}
+[data-md-color-scheme="slate"] {
+  --tpp-accent: #63c3d1;
+  --tpp-kind: #cfa3dd;
+  --tpp-data: #e0b35a;
+  --tpp-data-bg: #2e2612;
+  --tpp-note-bg: #2c2033;
+  --tpp-warn: #f4a3a3;
+  --tpp-warn-bg: #3a1c1c;
+  --tpp-line: #2f3846;
+  --tpp-soft: #1f2632;
+  --tpp-code-bg: #161b22;
+}
+.md-typeset .tpp-eyebrow { font-size: .72rem; letter-spacing: .06em; text-transform: uppercase; color: var(--tpp-kind); font-weight: 600; margin-bottom: -.6rem; }
+.md-typeset .tpp-nt { text-transform: none; }
+.md-typeset dl.tpp-facts { display: grid; grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr)); gap: .6rem 1.4rem; padding: .9rem 1rem; border: 1px solid var(--tpp-line); border-radius: .3rem; margin: 1rem 0; }
+.md-typeset dl.tpp-facts div { min-width: 0; }
+.md-typeset dl.tpp-facts dt { font-size: .64rem; letter-spacing: .05em; text-transform: uppercase; color: var(--md-default-fg-color--light); font-weight: 400; margin: 0; }
+.md-typeset dl.tpp-facts dd { margin: .1rem 0 0; }
+.md-typeset .tpp-meta { color: var(--md-default-fg-color--light); font-size: .72rem; }
+.md-typeset .tpp-tablewrap { overflow-x: auto; margin: .6rem 0; }
+.md-typeset table.tpp-known, .md-typeset table.tpp-grid, .md-typeset table.tpp-plain { border-collapse: collapse; font-size: .68rem; min-width: 100%; }
+.md-typeset table.tpp-known th, .md-typeset table.tpp-known td,
+.md-typeset table.tpp-grid th, .md-typeset table.tpp-grid td,
+.md-typeset table.tpp-plain th, .md-typeset table.tpp-plain td { border: 1px solid var(--tpp-line); padding: .25rem .45rem; text-align: center; font-variant-numeric: tabular-nums; }
+.md-typeset table.tpp-known td:first-child, .md-typeset table.tpp-plain td:first-child, .md-typeset table.tpp-grid td:first-child { text-align: left; white-space: nowrap; }
+.md-typeset table.tpp-plain td { text-align: left; }
+.md-typeset table.tpp-known th, .md-typeset table.tpp-grid th, .md-typeset table.tpp-plain th { background: var(--tpp-soft); font-weight: 600; }
+.md-typeset table.tpp-grid td { padding: .15rem .3rem; }
+.md-typeset table.tpp-known th, .md-typeset table.tpp-known td, .md-typeset table.tpp-grid th { white-space: nowrap; }
+.md-typeset .tpp-deg, .md-typeset td.tpp-yes { color: var(--tpp-data); font-weight: 600; }
+.md-typeset .tpp-no { color: var(--md-default-fg-color--lighter); }
+.md-typeset .tpp-soon { color: var(--tpp-kind); font-style: italic; }
+.md-typeset .tpp-legend { font-size: .68rem; color: var(--md-default-fg-color--light); }
+.md-typeset .tpp-cell { border: 1px solid var(--tpp-line); border-radius: .3rem; margin: .7rem 0; padding: 0 .9rem .6rem; background: var(--md-default-bg-color); box-shadow: none; }
+.md-typeset .tpp-cell-head, .md-typeset details.tpp-cell > summary { display: flex; flex-wrap: wrap; gap: .3rem 1rem; align-items: baseline; padding: .6rem 0 .45rem; border-bottom: 1px solid var(--tpp-soft); margin-bottom: .5rem; }
+.md-typeset details.tpp-cell > summary { cursor: pointer; list-style: none; margin: 0 -.9rem; padding: .55rem .9rem; border-bottom: 0; background: transparent; font-weight: 400; }
+.md-typeset details.tpp-cell > summary::-webkit-details-marker { display: none; }
+.md-typeset details.tpp-cell > summary::before { content: "▸"; color: var(--md-default-fg-color--light); width: .8rem; }
+.md-typeset details.tpp-cell[open] > summary::before { content: "▾"; }
+.md-typeset details.tpp-cell[open] > summary { border-bottom: 1px solid var(--tpp-soft); margin-bottom: .5rem; }
+.md-typeset .tpp-cell-title { font-weight: 600; }
+.md-typeset a.tpp-file { margin-left: auto; font-family: var(--md-code-font-family); font-size: .64rem; color: var(--tpp-data); background: var(--tpp-data-bg); padding: .05rem .4rem; border-radius: .2rem; white-space: nowrap; }
+.md-typeset a.tpp-goto { font-size: .68rem; margin-left: auto; }
+.md-typeset a.tpp-goto + a.tpp-file { margin-left: .5rem; }
+.md-typeset .tpp-lbl { font-size: .62rem; letter-spacing: .05em; text-transform: uppercase; color: var(--md-default-fg-color--light); margin: .55rem 0 .1rem; }
+.md-typeset .tpp-sublbl { font-size: .68rem; color: var(--md-default-fg-color--light); margin-top: .3rem; }
+.md-typeset .tpp-math { overflow-x: auto; padding: .15rem 0 .3rem; }
+.md-typeset pre.maple { position: relative; font-family: var(--md-code-font-family); font-size: .66rem; line-height: 1.5; background: var(--tpp-code-bg); color: var(--md-code-fg-color); border: 1px solid var(--tpp-soft); border-radius: .2rem; padding: .55rem 4rem .55rem .7rem; margin: .2rem 0; white-space: pre-wrap; overflow-wrap: anywhere; max-height: 24rem; overflow: auto; }
+.md-typeset .tpp-copy { position: absolute; top: .3rem; right: .3rem; font-size: .6rem; padding: .1rem .4rem; border: 1px solid var(--tpp-line); border-radius: .2rem; background: var(--md-default-bg-color); color: var(--md-default-fg-color--light); cursor: pointer; }
+.md-typeset .tpp-copy:hover { color: var(--tpp-accent); border-color: var(--tpp-accent); }
+.md-typeset .tpp-prov { font-size: .64rem; color: var(--md-default-fg-color--light); margin: .5rem 0 0; }
+.md-typeset .tpp-note { border-left: 3px solid var(--tpp-kind); background: var(--tpp-note-bg); padding: .4rem .7rem; border-radius: 0 .3rem .3rem 0; font-size: .7rem; }
+.md-typeset .tpp-warn { border-left-color: var(--tpp-warn); background: var(--tpp-warn-bg); }
+.md-typeset .tpp-todo { display: inline-block; font-size: .56rem; letter-spacing: .04em; text-transform: uppercase; color: var(--tpp-data); border: 1px solid var(--tpp-data); border-radius: .15rem; padding: 0 .3rem; margin-left: .2rem; }
+.md-typeset ul.tpp-cols { columns: 3 11rem; column-gap: 1.5rem; }
+.md-typeset ul.tpp-cols li { break-inside: avoid; }
+.md-typeset ul.tpp-files li { font-family: var(--md-code-font-family); font-size: .64rem; }
+.md-typeset ul.tpp-rules li { font-family: var(--md-code-font-family); font-size: .7rem; }
+.md-typeset .tpp-footer { margin-top: 2rem; padding-top: .8rem; border-top: 1px solid var(--tpp-line); font-size: .7rem; color: var(--md-default-fg-color--light); }
+.md-typeset .tpp-footer a.tpp-file { margin-left: 0; }
+/* pages converted from WordPress: keep its line breaks */
+.md-typeset .wp-content { white-space: pre-line; }
+.md-typeset .wp-content table, .md-typeset .wp-content ul, .md-typeset .wp-content ol, .md-typeset .wp-content pre { white-space: normal; }
+.md-typeset .wp-content pre.maple { white-space: pre-wrap; }
+.md-typeset .wp-content details.wp-toggle { border: 1px solid var(--tpp-line); border-radius: .3rem; margin: .4rem 0; padding: 0 .8rem; box-shadow: none; font-size: inherit; }
+.md-typeset .wp-content details.wp-toggle > summary { cursor: pointer; padding: .4rem 0; font-weight: 600; background: none; }
+.md-typeset .wp-content details.wp-toggle > summary::before, .md-typeset .wp-content details.wp-toggle > summary::after { display: none; }
+.md-typeset .wp-content .wp-toggle-body { padding-bottom: .5rem; font-family: var(--md-code-font-family); font-size: .66rem; overflow-wrap: anywhere; }
+.md-typeset .wp-content td { padding: .3rem .5rem; border: 1px solid var(--tpp-line); vertical-align: top; }
+.md-typeset .wp-content table { display: table; border-collapse: collapse; font-size: .72rem; }
+.md-typeset p.migrated { font-size: .64rem; color: var(--md-default-fg-color--light); margin-top: 2rem; }
+/* fixes on top of Material's own details/summary and h1 styling */
+.md-typeset .tpp-eyebrow { margin-bottom: .2rem; }
+.md-typeset .tpp-eyebrow + h1, .md-typeset h1:first-child { margin-top: 0; }
+.md-typeset h1 { color: var(--md-default-fg-color); font-weight: 500; }
+.md-typeset details.tpp-cell { font-size: inherit; border: 1px solid var(--tpp-line); border-left-width: 1px; overflow: visible; padding: 0 .9rem .1rem; }
+.md-typeset details.tpp-cell:not([open]) { padding-bottom: 0; }
+.md-typeset details.tpp-cell > summary { padding: .55rem .9rem; border-radius: 0; }
+.md-typeset details.tpp-cell > summary::before { position: static; -webkit-mask-image: none; mask-image: none; background: none; width: .9rem; height: auto; transform: none; color: var(--md-default-fg-color--light); }
+.md-typeset details.tpp-cell > summary::after { display: none; }
+.md-typeset details.tpp-cell:focus-within, .md-typeset details.tpp-cell { box-shadow: none; }

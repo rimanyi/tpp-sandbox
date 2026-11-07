@@ -1,0 +1,23 @@
+# title: Thom series of B4 (all relative dimensions at once)
+# entity: B4
+# kind: series
+# local-algebra: C[x,y]/(x^2,xy^2,y^3)
+# tp-degree: 4l+7
+# source: not recorded on the old site (to be added)
+# note: Filtration note: Kazarian lists the dimension vectors \((2,2)\), \((0,1,1,0,2)\), and \((0,1,1,1,1)\). After suppressing zero entries, these give the profiles \((2,2)\), \((1,1,2)\), and \((1,1,1,1)\). The first presentation carries the multidegree factor \(2(z_3+z_4-2z_1-2z_2)\).
+#   Explicit Thom series: Not presently listed.
+# convention: TPP 2026 (signs and orientations may differ from pre-2026 versions of the Thom series page)
+# retrieved-from: https://tpp.web.unc.edu/tp-linfinity/ (page modified 2026-08-02)
+# profile-1: \omega=(2,2)
+# box-1-1: Maple expression
+# profile-2: \omega=(1,1,2)
+# box-2-1: Maple expression
+# profile-3: \omega=(1,1,1,1)
+# box-3-1: Maple expression
+# Read into Maple with:  read "series.txt":
+Ts_B4_profile1_display := "\\(\\displaystyle F_{\\Sigma^{2,1},(2,2)}=\\frac{2z_1z_3(z_3+z_4-2z_1-2z_2)}{(z_3-2z_1)(z_4-2z_1)(z_3-z_1-z_2)(z_4-z_1-z_2)(z_3-2z_2)(z_4-2z_2)}\\)":
+F_B4_profile1 := (2*z[1]*z[3]*(z[3]+z[4]-2*z[1]-2*z[2]))/((z[3]-2*z[1])*(z[4]-2*z[1])*(z[3]-z[1]-z[2])*(z[4]-z[1]-z[2])*(z[3]-2*z[2])*(z[4]-2*z[2])):
+Ts_B4_profile2_display := "\\(\\displaystyle F_{\\Sigma^{2,1}}=\\frac{z_3}{(z_3-2z_1)(z_4-2z_1)(z_3-z_1-z_2)(z_4-z_1-z_2)}\\)":
+F_B4_profile2 := (z[3])/((z[3]-2*z[1])*(z[4]-2*z[1])*(z[3]-z[1]-z[2])*(z[4]-z[1]-z[2])):
+Ts_B4_profile3_display := "\\(\\displaystyle F_{\\Sigma^{2,1}}=\\frac{1}{(z_3-2z_1)(z_4-2z_1)(z_4-z_1-z_2)}\\)":
+F_B4_profile3 := (1)/((z[3]-2*z[1])*(z[4]-2*z[1])*(z[4]-z[1]-z[2])):

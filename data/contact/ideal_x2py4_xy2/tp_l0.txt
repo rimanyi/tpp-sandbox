@@ -1,0 +1,13 @@
+# title: Thom polynomial of ideal_x2py4_xy2, relative dimension l=0
+# entity: ideal_x2py4_xy2
+# kind: tp
+# l: 0
+# codimension: 9
+# variables: c[i] = quotient Chern classes (see Conventions); s[[lambda]] = Schur polynomial in the c[i]
+# source: not recorded on the old site (to be added)
+# note: heading on the old page: codimension 9 --- beyond Mather's nice dimensions
+# convention: TPP 2025
+# retrieved-from: https://tpp.web.unc.edu/thom-polynomials-relative-dimension-l0/ (page modified 2025-06-12)
+# Read into Maple with:  read "tp_l0.txt":
+Tp_ideal_x2py4_xy2_l0_monomial := -c[1]^3*c[2]*c[4] -4*c[1]^2*c[2]^2*c[3] +5*c[1]*c[2]^4 -11*c[1]^2*c[2]*c[5] +c[1]^2*c[3]*c[4] +12*c[1]*c[2]^2*c[4] -10*c[1]*c[2]*c[3]^2 +8*c[2]^3*c[3] -22*c[1]*c[2]*c[6] +18*c[1]*c[3]*c[5] -8*c[1]*c[4]^2 +21*c[2]^2*c[5] -16*c[2]*c[3]*c[4] +7*c[3]^3 -12*c[2]*c[7] +22*c[3]*c[6] -10*c[4]*c[5]:
+Tp_ideal_x2py4_xy2_l0_schur := 5*s[[2,2,2,2,1]] +11*s[[3,2,2,1,1]] +24*s[[3,2,2,2]] +6*s[[3,3,1,1,1]] +30*s[[3,3,2,1]] +12*s[[3,3,3]] +6*s[[4,2,1,1,1]] +60*s[[4,2,2,1]] +42*s[[4,3,1,1]] +68*s[[4,3,2]] +30*s[[4,4,1]] +36*s[[5,2,1,1]] +85*s[[5,2,2]] +96*s[[5,3,1]] +36*s[[5,4]] +66*s[[6,2,1]] +72*s[[6,3]] +36*s[[7,2]]:

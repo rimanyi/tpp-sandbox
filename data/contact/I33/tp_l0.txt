@@ -1,0 +1,12 @@
+# title: Thom polynomial of I33, relative dimension l=0
+# entity: I33
+# kind: tp
+# l: 0
+# codimension: 6
+# variables: c[i] = quotient Chern classes (see Conventions); s[[lambda]] = Schur polynomial in the c[i]
+# source: I. Porteous: The second-order decomposition of \(\Sigma^2\), Topology, Vol 11 (1972), 325-334
+# convention: TPP 2025
+# retrieved-from: https://tpp.web.unc.edu/thom-polynomials-relative-dimension-l0/ (page modified 2025-06-12)
+# Read into Maple with:  read "tp_l0.txt":
+Tp_I33_l0_monomial := -c[1]^3*c[3] +c[1]^2*c[2]^2 -2*c[1]^2*c[4] +3*c[1]*c[2]*c[3] -c[2]^3 -3*c[2]*c[4] +3*c[3]^2:
+Tp_I33_l0_schur := 6*s[[3,3]] +2*s[[4,2]] +3*s[[3,2,1]] +s[[2,2,1,1]]:

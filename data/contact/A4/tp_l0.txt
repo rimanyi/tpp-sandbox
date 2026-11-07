@@ -1,0 +1,12 @@
+# title: Thom polynomial of A4, relative dimension l=0
+# entity: A4
+# kind: tp
+# l: 0
+# codimension: 4
+# variables: c[i] = quotient Chern classes (see Conventions); s[[lambda]] = Schur polynomial in the c[i]
+# source: not recorded on the old site (to be added)
+# convention: TPP 2025
+# retrieved-from: https://tpp.web.unc.edu/thom-polynomials-relative-dimension-l0/ (page modified 2025-06-12)
+# Read into Maple with:  read "tp_l0.txt":
+Tp_A4_l0_monomial := c[1]^4 +6*c[1]^2*c[2] +9*c[1]*c[3] +2*c[2]^2 +6*c[4]:
+Tp_A4_l0_schur := 24*s[[4]] +10*s[[2,2]] +26*s[[3,1]] +9*s[[2,1,1]] +s[[1,1,1,1]]:

@@ -1,0 +1,12 @@
+# title: Thom polynomial of A3, relative dimension l=0
+# entity: A3
+# kind: tp
+# l: 0
+# codimension: 3
+# variables: c[i] = quotient Chern classes (see Conventions); s[[lambda]] = Schur polynomial in the c[i]
+# source: not recorded on the old site (to be added)
+# convention: TPP 2025
+# retrieved-from: https://tpp.web.unc.edu/thom-polynomials-relative-dimension-l0/ (page modified 2025-06-12)
+# Read into Maple with:  read "tp_l0.txt":
+Tp_A3_l0_monomial := c[1]^3 +3*c[1]*c[2] +2*c[3]:
+Tp_A3_l0_schur := 6*s[[3]] +5*s[[2,1]] +s[[1,1,1]]:

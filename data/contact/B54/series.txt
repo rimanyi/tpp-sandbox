@@ -1,0 +1,12 @@
+# title: Thom series of B54 (all relative dimensions at once)
+# entity: B54
+# kind: series
+# local-algebra: C[x,y]/(x^3,x^2y,xy^2,y^3)
+# tp-degree: 5l+10
+# source: not recorded on the old site (to be added)
+# note: Filtration profile \(\omega\): To be added.
+#   \(F_{Q,\omega}\): To be checked in the present conventions.
+#   Explicit Thom series: To be checked or added.
+# convention: TPP 2026 (signs and orientations may differ from pre-2026 versions of the Thom series page)
+# retrieved-from: https://tpp.web.unc.edu/tp-linfinity/ (page modified 2026-08-02)
+# Read into Maple with:  read "series.txt":

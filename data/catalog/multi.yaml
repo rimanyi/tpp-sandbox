@@ -1,0 +1,18 @@
+# Descriptions of multi-singularities that need more than their name.
+# Every multi-singularity with a data folder under data/multi/ gets a page; entries here add text to it.
+
+- id: EMPTY
+  name: ∅
+  description: The multi-singularity with no points. Its target SSM polynomial is the master series MS(l), and the S0 series
+    is its logarithm, S0(l) = log MS(l). Only for the empty multi-singularity is the logarithm the natural object.
+  s0_intro: 'S0 series for relative dimensions 1,2,3,4,5,6,7
+
+    Master Series(l)=MS(l)=exp(S0(l)).
+
+    Notation:
+
+    s[[i1,i2,…]] = f_*(c_{i1} c_{i2} … ).
+
+    ss[[i1,i2,…]] = f_*( Schur(i1,i2, … ).
+
+    The variable t keeps track of cohomological degree.'

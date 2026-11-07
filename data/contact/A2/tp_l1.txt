@@ -1,0 +1,12 @@
+# title: Thom polynomial of A2, relative dimension l=1
+# entity: A2
+# kind: tp
+# l: 1
+# codimension: 4
+# variables: c[i] = quotient Chern classes (see Conventions); s[[lambda]] = Schur polynomial in the c[i]
+# source: F. Ronga: Le calcul des classes duales aux singularités de Boardman d'ordre deux, Commentarii mathematici Helvetici (1972), Vol. 47, 15-35
+# convention: TPP 2025
+# retrieved-from: https://tpp.web.unc.edu/thom-polynomials-relative-dimension-1/ (page modified 2025-05-21)
+# Read into Maple with:  read "tp_l1.txt":
+Tp_A2_l1_monomial := c[1]*c[3] +c[2]^2 +2*c[4]:
+Tp_A2_l1_schur := 4*s[[4]] +s[[2,2]] +2*s[[3,1]]:

@@ -1,0 +1,12 @@
+# title: Thom polynomial of B51, relative dimension l=0
+# entity: B51
+# kind: tp
+# l: 0
+# codimension: 7
+# variables: c[i] = quotient Chern classes (see Conventions); s[[lambda]] = Schur polynomial in the c[i]
+# source: not recorded on the old site (to be added)
+# convention: TPP 2025
+# retrieved-from: https://tpp.web.unc.edu/thom-polynomials-relative-dimension-l0/ (page modified 2025-06-12)
+# Read into Maple with:  read "tp_l0.txt":
+Tp_B51_l0_monomial := -2*c[1]^2*c[2]*c[3] +2*c[1]*c[2]^3 -4*c[1]*c[2]*c[4] +2*c[1]*c[3]^2 +2*c[2]^2*c[3] -2*c[2]*c[5] +2*c[3]*c[4]:
+Tp_B51_l0_schur := 8*s[[4,3]] +4*s[[5,2]] +6*s[[3,2,2]] +6*s[[3,3,1]] +6*s[[4,2,1]] +2*s[[2,2,2,1]] +2*s[[3,2,1,1]]:

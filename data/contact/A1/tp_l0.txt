@@ -1,0 +1,12 @@
+# title: Thom polynomial of A1, relative dimension l=0
+# entity: A1
+# kind: tp
+# l: 0
+# codimension: 1
+# variables: c[i] = quotient Chern classes (see Conventions); s[[lambda]] = Schur polynomial in the c[i]
+# source: I. Porteous: Simple singularities of maps. In Proc. Liverpool Singularities I, Springer LNM 192 (1971), 268-307
+# convention: TPP 2025
+# retrieved-from: https://tpp.web.unc.edu/thom-polynomials-relative-dimension-l0/ (page modified 2025-06-12)
+# Read into Maple with:  read "tp_l0.txt":
+Tp_A1_l0_monomial := c[1]:
+Tp_A1_l0_schur := s[[1]]:

@@ -1,0 +1,13 @@
+# title: SSM-Thom polynomial of C42, relative dimension l=2
+# entity: C42
+# kind: ssm
+# l: 2
+# codimension: 16   (the lowest-degree part is the Thom polynomial)
+# computed-up-to-degree: 16
+# variables: t = cohomological degree; c[i], s[[lambda]] as for Thom polynomials
+# source: not recorded on the old site (to be added)
+# convention: TPP 2025
+# retrieved-from: https://tpp.web.unc.edu/ssm-thom-polynomials-for-l2/ (page modified 2025-05-31)
+# Read into Maple with:  read "ssm_l2.txt":
+SSM_C42_l2_monomial := +t^16*( -3*c[1]*c[3]*c[5]*c[7] +3*c[1]*c[3]*c[6]^2 +3*c[1]*c[4]^2*c[7] -6*c[1]*c[4]*c[5]*c[6] +3*c[1]*c[5]^3 -7*c[3]*c[5]*c[8] +7*c[3]*c[6]*c[7] +7*c[4]^2*c[8] -7*c[4]*c[5]*c[7] -7*c[4]*c[6]^2 +7*c[5]^2*c[6] ):
+SSM_C42_l2_schur := +t^16*( 3*s[[5,5,5,1]] +10*s[[6,5,5]] ):

@@ -1,0 +1,13 @@
+# title: SSM-Thom polynomial of I26, relative dimension l=0
+# entity: I26
+# kind: ssm
+# l: 0
+# codimension: 8   (the lowest-degree part is the Thom polynomial)
+# computed-up-to-degree: 8
+# variables: t = cohomological degree; c[i], s[[lambda]] as for Thom polynomials
+# source: not recorded on the old site (to be added)
+# convention: TPP 2025
+# retrieved-from: https://tpp.web.unc.edu/ssm-thom-polynomials-for-l0/ (page modified 2025-05-31)
+# Read into Maple with:  read "ssm_l0.txt":
+SSM_I26_l0_monomial := +t^8*( -2*c[1]^5*c[3] +2*c[1]^4*c[2]^2 -14*c[1]^4*c[4] -4*c[1]^3*c[2]*c[3] +18*c[1]^2*c[2]^3 -71*c[1]^3*c[5] +60*c[1]^2*c[2]*c[4] -53*c[1]^2*c[3]^2 +57*c[1]*c[2]^2*c[3] +7*c[2]^4 -154*c[1]^2*c[6] +166*c[1]*c[2]*c[5] -90*c[1]*c[3]*c[4] +74*c[2]^2*c[4] +4*c[2]*c[3]^2 -120*c[1]*c[7] +162*c[2]*c[6] -39*c[3]*c[5] -3*c[4]^2 ):
+SSM_I26_l0_schur := +t^8*( 2*s[[2,2,1,1,1,1]] +24*s[[2,2,2,1,1]] +29*s[[2,2,2,2]] +40*s[[3,2,1,1,1]] +194*s[[3,2,2,1]] +108*s[[3,3,1,1]] +194*s[[3,3,2]] +250*s[[4,2,1,1]] +424*s[[4,2,2]] +406*s[[4,3,1]] +124*s[[4,4]] +620*s[[5,2,1]] +412*s[[5,3]] +528*s[[6,2]] ):

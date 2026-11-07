@@ -1,0 +1,14 @@
+# title: Thom series of III22 (all relative dimensions at once)
+# entity: III22
+# kind: series
+# local-algebra: C[x,y]/(x^2,xy,y^2)
+# tp-degree: 2l+4
+# source: not recorded on the old site (to be added)
+# convention: TPP 2026 (signs and orientations may differ from pre-2026 versions of the Thom series page)
+# retrieved-from: https://tpp.web.unc.edu/tp-linfinity/ (page modified 2026-08-02)
+# profile-1: \omega=(2)
+# box-1-1: Maple expression
+# Read into Maple with:  read "series.txt":
+Ts_III22_profile1_display := "\\(F_{Q,(2)}=z_1\\)":
+F_III22_profile1 := z[1]:
+Ts_III22_explicit_tex := "\\Delta_{1,1}":

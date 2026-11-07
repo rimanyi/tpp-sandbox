@@ -1,0 +1,21 @@
+# title: SSM-Thom polynomial of I24, relative dimension l=0
+# entity: I24
+# kind: ssm
+# l: 0
+# codimension: 6   (the lowest-degree part is the Thom polynomial)
+# computed-up-to-degree: 8
+# variables: t = cohomological degree; c[i], s[[lambda]] as for Thom polynomials
+# source: not recorded on the old site (to be added)
+# convention: TPP 2025
+# retrieved-from: https://tpp.web.unc.edu/ssm-thom-polynomials-for-l0/ (page modified 2025-05-31)
+# Read into Maple with:  read "ssm_l0.txt":
+SSM_I24_l0_monomial :=
++t^6*( -2*c[1]^3*c[3] +2*c[1]^2*c[2]^2 -5*c[1]^2*c[4] +2*c[1]*c[2]*c[3] +3*c[2]^3 -6*c[1]*c[5] +9*c[2]*c[4] -3*c[3]^2 )
++t^7*( 12*c[1]^4*c[3] -12*c[1]^3*c[2]^2 +41*c[1]^3*c[4] -14*c[1]^2*c[2]*c[3] -27*c[1]*c[2]^3 +81*c[1]^2*c[5] -86*c[1]*c[2]*c[4] +34*c[1]*c[3]^2 -29*c[2]^2*c[3] +54*c[1]*c[6] -67*c[2]*c[5] +13*c[3]*c[4] )
++t^8*( -42*c[1]^5*c[3] +42*c[1]^4*c[2]^2 -184*c[1]^4*c[4] +68*c[1]^3*c[2]*c[3] +116*c[1]^2*c[2]^3 -507*c[1]^3*c[5] +466*c[1]^2*c[2]*c[4] -205*c[1]^2*c[3]^2 +249*c[1]*c[2]^2*c[3] -3*c[2]^4 -664*c[1]^2*c[6] +713*c[1]*c[2]*c[5] -213*c[1]*c[3]*c[4] +123*c[2]^2*c[4] +41*c[2]*c[3]^2 -336*c[1]*c[7] +400*c[2]*c[6] -60*c[3]*c[5] -4*c[4]^2 )
+:
+SSM_I24_l0_schur :=
++t^6*( 4*s[[3,3]] +16*s[[4,2]] +5*s[[2,2,2]] +12*s[[3,2,1]] +2*s[[2,2,1,1]] )
++t^7*( -196*s[[4,3]] -244*s[[5,2]] -160*s[[3,2,2]] -140*s[[3,3,1]] -282*s[[4,2,1]] -51*s[[2,2,2,1]] -104*s[[3,2,1,1]] -12*s[[2,2,1,1,1]] )
++t^8*( 42*s[[2,2,1,1,1,1]] +242*s[[2,2,2,1,1]] +197*s[[2,2,2,2]] +468*s[[3,2,1,1,1]] +1408*s[[3,2,2,1]] +1074*s[[3,3,1,1]] +1477*s[[3,3,2]] +1902*s[[4,2,1,1]] +2422*s[[4,2,2]] +3232*s[[4,3,1]] +1060*s[[4,4]] +3396*s[[5,2,1]] +2800*s[[5,3]] +2256*s[[6,2]] )
+:

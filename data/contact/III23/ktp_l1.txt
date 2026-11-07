@@ -1,0 +1,11 @@
+# title: K-theoretic Thom polynomial of III23, relative dimension l=1
+# entity: III23
+# kind: ktp
+# l: 1
+# codimension: 8
+# format: TeX-like Grothendieck expansion g_{lambda}, stored as a Maple string (to be normalised to Maple syntax)
+# variables: g_{lambda} = (stable) Grothendieck polynomial; K-theoretic fundamental class = class of the structure sheaf of a resolution, pushed forward
+# source: unpublished
+# retrieved-from: https://tpp.web.unc.edu/ktps-l1/ (page modified 2025-02-08)
+# Read into Maple with:  read "ktp_l1.txt":
+KTp_III23_l1_tex := "2g_{3, 3, 2}+ 4g_{4, 3, 1}+ 8g_{5, 3} - ( g_{3, 3, 3}+ 5g_{4, 3, 2}+ 12g_{5, 3, 1}+ 12g_{6, 3} ) + g_{4, 3, 3}+ 4g_{5, 3, 2}+ 13g_{6, 3, 1}+ 6g_{7, 3} - ( g_{6, 3, 2}+ 6g_{7, 3, 1}+ g_{8, 3}) + g_{8, 3, 1}":

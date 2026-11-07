@@ -1,0 +1,14 @@
+# title: Thom series of C3 (all relative dimensions at once)
+# entity: C3
+# kind: series
+# local-algebra: C[x,y,z]/(x,y,z)^2
+# tp-degree: 3l+9
+# source: not recorded on the old site (to be added)
+# convention: TPP 2026 (signs and orientations may differ from pre-2026 versions of the Thom series page)
+# retrieved-from: https://tpp.web.unc.edu/tp-linfinity/ (page modified 2026-08-02)
+# profile-1: \omega=(3)
+# box-1-1: Maple expression
+# Read into Maple with:  read "series.txt":
+Ts_C3_profile1_display := "\\(F_{Q,(3)}=z_1^2z_2\\)":
+F_C3_profile1 := z[1]^2*z[2]:
+Ts_C3_explicit_tex := "\\Delta_{2,2,2}":

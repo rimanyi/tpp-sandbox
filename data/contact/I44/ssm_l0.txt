@@ -1,0 +1,13 @@
+# title: SSM-Thom polynomial of I44, relative dimension l=0
+# entity: I44
+# kind: ssm
+# l: 0
+# codimension: 8   (the lowest-degree part is the Thom polynomial)
+# computed-up-to-degree: 8
+# variables: t = cohomological degree; c[i], s[[lambda]] as for Thom polynomials
+# source: not recorded on the old site (to be added)
+# convention: TPP 2025
+# retrieved-from: https://tpp.web.unc.edu/ssm-thom-polynomials-for-l0/ (page modified 2025-05-31)
+# Read into Maple with:  read "ssm_l0.txt":
+SSM_I44_l0_monomial := +t^8*( -c[1]^5*c[3] +c[1]^4*c[2]^2 -5*c[1]^4*c[4] +6*c[1]^3*c[2]*c[3] -c[1]^2*c[2]^3 -6*c[1]^3*c[5] -9*c[1]^2*c[2]*c[4] +18*c[1]^2*c[3]^2 -5*c[1]*c[2]^2*c[3] +2*c[2]^4 -29*c[1]*c[2]*c[5] +27*c[1]*c[3]*c[4] +13*c[2]^2*c[4] -11*c[2]*c[3]^2 -2*c[2]*c[6] -21*c[3]*c[5] +23*c[4]^2 ):
+SSM_I44_l0_schur := +t^8*( s[[2,2,1,1,1,1]] +2*s[[2,2,2,1,1]] +3*s[[2,2,2,2]] +8*s[[3,2,1,1,1]] +15*s[[3,2,2,1]] +36*s[[3,3,1,1]] +21*s[[3,3,2]] +23*s[[4,2,1,1]] +25*s[[4,2,2]] +95*s[[4,3,1]] +86*s[[4,4]] +28*s[[5,2,1]] +62*s[[5,3]] +12*s[[6,2]] ):

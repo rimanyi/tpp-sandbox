@@ -1,0 +1,15 @@
+# title: Thom series of A5 (all relative dimensions at once)
+# entity: A5
+# kind: series
+# local-algebra: C[x]/(x^6)
+# tp-degree: 5l+5
+# source: not recorded on the old site (to be added)
+# note: Sign check: The historical sign is retained. At \(l=0\), \(\text{Tp}(A_5^0)=c_1^5+10c_1^3c_2+10c_1c_2^2+25c_1^2c_3+12c_2c_3+38c_1c_4+24c_5\).
+#   Explicit Thom series: Not presently listed.
+# convention: TPP 2026 (signs and orientations may differ from pre-2026 versions of the Thom series page)
+# retrieved-from: https://tpp.web.unc.edu/tp-linfinity/ (page modified 2026-08-02)
+# profile-1: \omega=(1,1,1,1,1)
+# box-1-1: Maple expression
+# Read into Maple with:  read "series.txt":
+Ts_A5_profile1_display := "\\(\\displaystyle F_{A_5,(1,1,1,1,1)}=F_1/F_2\\), where \\(F_1=(z_5-2z_1-z_2)(2z_1^2+3z_1z_2-2z_1z_5+2z_2z_3-z_2z_4-z_2z_5-z_3z_4+z_4z_5)\\) and \\(F_2=\\prod_{i+j\\leq k\\leq5}(z_k-z_i-z_j)\\).":
+F_A5_profile1 := ((z[5]-2*z[1]-z[2])*(2*z[1]^2+3*z[1]*z[2]-2*z[1]*z[5]+2*z[2]*z[3]-z[2]*z[4]-z[2]*z[5]-z[3]*z[4]+z[4]*z[5]))/((z[2]-2*z[1])*(z[3]-2*z[1])*(z[3]-z[1]-z[2])*(z[4]-2*z[1])*(z[4]-z[1]-z[2])*(z[4]-z[1]-z[3])*(z[4]-2*z[2])*(z[5]-2*z[1])*(z[5]-z[1]-z[2])*(z[5]-z[1]-z[3])*(z[5]-z[1]-z[4])*(z[5]-2*z[2])*(z[5]-z[2]-z[3])):

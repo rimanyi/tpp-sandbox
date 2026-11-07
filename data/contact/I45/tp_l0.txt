@@ -1,0 +1,13 @@
+# title: Thom polynomial of I45, relative dimension l=0
+# entity: I45
+# kind: tp
+# l: 0
+# codimension: 9
+# variables: c[i] = quotient Chern classes (see Conventions); s[[lambda]] = Schur polynomial in the c[i]
+# source: R. Rimanyi: unpublished
+# note: heading on the old page: codimension 9 --- beyond Mather's nice dimensions
+# convention: TPP 2025
+# retrieved-from: https://tpp.web.unc.edu/thom-polynomials-relative-dimension-l0/ (page modified 2025-06-12)
+# Read into Maple with:  read "tp_l0.txt":
+Tp_I45_l0_monomial := -2*c[1]^6*c[3] +2*c[1]^5*c[2]^2 -14*c[1]^5*c[4] +14*c[1]^4*c[2]*c[3] -32*c[1]^4*c[5] -24*c[1]^3*c[2]*c[4] +58*c[1]^3*c[3]^2 -6*c[1]^2*c[2]^2*c[3] +4*c[1]*c[2]^4 -24*c[1]^3*c[6] -136*c[1]^2*c[2]*c[5] +158*c[1]^2*c[3]*c[4] +16*c[1]*c[2]^2*c[4] -22*c[1]*c[2]*c[3]^2 +8*c[2]^3*c[3] -134*c[1]*c[2]*c[6] -30*c[1]*c[3]*c[5] +152*c[1]*c[4]^2 +24*c[2]^2*c[5] +2*c[2]*c[3]*c[4] -14*c[3]^3 -12*c[2]*c[7] -98*c[3]*c[6] +110*c[4]*c[5]:
+Tp_I45_l0_schur := 2*s[[2,2,1,1,1,1,1]] +8*s[[2,2,2,1,1,1]] +14*s[[2,2,2,2,1]] +24*s[[3,2,1,1,1,1]] +78*s[[3,2,2,1,1]] +66*s[[3,2,2,2]] +136*s[[3,3,1,1,1]] +270*s[[3,3,2,1]] +84*s[[3,3,3]] +110*s[[4,2,1,1,1]] +250*s[[4,2,2,1]] +638*s[[4,3,1,1]] +612*s[[4,3,2]] +860*s[[4,4,1]] +240*s[[5,2,1,1]] +276*s[[5,2,2]] +1036*s[[5,3,1]] +1016*s[[5,4]] +248*s[[6,2,1]] +544*s[[6,3]] +96*s[[7,2]]:

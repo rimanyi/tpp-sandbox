@@ -1,0 +1,12 @@
+# title: Thom polynomial of A2, relative dimension l=2
+# entity: A2
+# kind: tp
+# l: 2
+# codimension: 6
+# variables: c[i] = quotient Chern classes (see Conventions); s[[lambda]] = Schur polynomial in the c[i]
+# source: not recorded on the old site (to be added)
+# convention: TPP 2025
+# retrieved-from: https://tpp.web.unc.edu/thom-polynomials-relative-dimension-l2/ (page modified 2025-05-21)
+# Read into Maple with:  read "tp_l2.txt":
+Tp_A2_l2_monomial := 2*c[1]*c[5] +c[2]*c[4] +c[3]^2 +4*c[6]:
+Tp_A2_l2_schur := 8*s[[6]] +s[[3,3]] +2*s[[4,2]] +4*s[[5,1]]:

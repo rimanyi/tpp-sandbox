@@ -1,0 +1,17 @@
+# title: Target SSM multi-singularity Thom polynomial of 2A0, relative dimension l=4
+# entity: 2A0
+# kind: target_ssm
+# l: 4
+# codimension: 8 (in the target)
+# computed-up-to-degree: 12
+# variables: t = cohomological degree; s[[i1,i2,...]] = f_*(c_{i1} c_{i2} ...), sc[[i1,...]] = f_*(Schur(i1,...)) (pushforward notation, see Conventions)
+# source: not recorded on the old site (to be added)
+# retrieved-from: https://tpp.web.unc.edu/target-ssm-multi-singularity-thom-polynomials-for-l4/ (page modified 2025-06-26)
+# Read into Maple with:  read "target_ssm_l4.txt":
+TargetSSM_M_2A0_l4 :=
++t^8*( -s[[4]] )
++t^9*( 4*s[[5]] +2*s[[1,4]] )
++t^10*( -3*s[[1,1,4]] +2*s[[2,4]] -9*s[[1,5]] -10*s[[6]] )
++t^11*( 4*s[[1,1,1,4]] -6*s[[1,2,4]] +2*s[[3,4]] +15*s[[1,1,5]] -10*s[[2,5]] +25*s[[1,6]] +20*s[[7]] )
++t^12*( 27*s[[2,6]] -51*s[[8]] -63*s[[1,7]] -5*s[[1,1,1,1,4]] +12*s[[1,1,2,4]] -3*s[[2,2,4]] -6*s[[1,3,4]] -22*s[[1,1,1,5]] +33*s[[1,2,5]] -13*s[[3,5]] -46*s[[1,1,6]] )
+:

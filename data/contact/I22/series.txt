@@ -1,0 +1,18 @@
+# title: Thom series of I22 (all relative dimensions at once)
+# entity: I22
+# kind: series
+# local-algebra: C[x,y]/(xy,x^2+y^2)
+# tp-degree: 3l+4
+# source: not recorded on the old site (to be added)
+# convention: TPP 2026 (signs and orientations may differ from pre-2026 versions of the Thom series page)
+# retrieved-from: https://tpp.web.unc.edu/tp-linfinity/ (page modified 2026-08-02)
+# profile-1: \omega=(2,1)
+# box-1-1: Maple expression
+# profile-2: \omega=(1,1,1)
+# box-2-1: Maple expression
+# Read into Maple with:  read "series.txt":
+Ts_I22_profile1_display := "\\(\\displaystyle F_{Q,(2,1)}=\\frac{z_1}{(z_3-2z_1)(z_3-z_1-z_2)(z_3-2z_2)}\\)":
+F_I22_profile1 := (z[1])/((z[3]-2*z[1])*(z[3]-z[1]-z[2])*(z[3]-2*z[2])):
+Ts_I22_profile2_display := "\\(\\displaystyle F_{Q,(1,1,1)}=\\frac{1}{2(z_3-2z_1)(z_3-z_1-z_2)}\\) The factor 1/2 corrects for the two compatible refined filtrations on a generic algebra.":
+F_I22_profile2 := (1)/(2*(z[3]-2*z[1])*(z[3]-z[1]-z[2])):
+Ts_I22_explicit_tex := "\\sum_{0\\leq j&lt;i}((i,j))\\Delta_{i,j+1,-i-j}":

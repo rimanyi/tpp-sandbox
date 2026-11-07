@@ -1,0 +1,13 @@
+# title: SSM-Thom polynomial of I22, relative dimension l=4
+# entity: I22
+# kind: ssm
+# l: 4
+# codimension: 16   (the lowest-degree part is the Thom polynomial)
+# computed-up-to-degree: 16
+# variables: t = cohomological degree; c[i], s[[lambda]] as for Thom polynomials
+# source: not recorded on the old site (to be added)
+# convention: TPP 2025
+# retrieved-from: https://tpp.web.unc.edu/ssm-thom-polynomials-for-l4/ (page modified 2025-05-31)
+# Read into Maple with:  read "ssm_l4.txt":
+SSM_I22_l4_monomial := +t^16*( -8*c[1]*c[5]*c[10] +5*c[1]*c[6]*c[9] +3*c[1]*c[7]*c[8] -4*c[2]*c[5]*c[9] +3*c[2]*c[6]*c[8] +c[2]*c[7]^2 -2*c[3]*c[5]*c[8] +2*c[3]*c[6]*c[7] -c[4]*c[5]*c[7] +c[4]*c[6]^2 -16*c[5]*c[11] +9*c[6]*c[10] +4*c[7]*c[9] +3*c[8]^2 ):
+SSM_I22_l4_schur := +t^16*( s[[6,6,4]] +3*s[[7,6,3]] +3*s[[7,7,2]] +7*s[[8,6,2]] +10*s[[8,7,1]] +10*s[[8,8]] +15*s[[9,6,1]] +25*s[[9,7]] +31*s[[10,6]] ):

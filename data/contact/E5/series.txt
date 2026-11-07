@@ -1,0 +1,14 @@
+# title: Thom series of E5 (all relative dimensions at once)
+# entity: E5
+# kind: series
+# local-algebra: C[x,y,z,t,u]/(x,y,z,t,u)^2
+# tp-degree: 5l+25
+# source: not recorded on the old site (to be added)
+# convention: TPP 2026 (signs and orientations may differ from pre-2026 versions of the Thom series page)
+# retrieved-from: https://tpp.web.unc.edu/tp-linfinity/ (page modified 2026-08-02)
+# profile-1: \omega=(5)
+# box-1-1: Maple expression
+# Read into Maple with:  read "series.txt":
+Ts_E5_profile1_display := "\\(\\displaystyle F_{\\Sigma^5,(5)}=z_1^4z_2^3z_3^2z_4\\)":
+F_E5_profile1 := z[1]^4*z[2]^3*z[3]^2*z[4]:
+Ts_E5_explicit_tex := "\\Delta_{4,4,4,4,4}":

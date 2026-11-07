@@ -1,0 +1,11 @@
+# title: K-theoretic Thom polynomial of I22, relative dimension l=0
+# entity: I22
+# kind: ktp
+# l: 0
+# codimension: 4
+# format: TeX-like Grothendieck expansion g_{lambda}, stored as a Maple string (to be normalised to Maple syntax)
+# variables: g_{lambda} = (stable) Grothendieck polynomial; K-theoretic fundamental class = class of the structure sheaf of a resolution, pushed forward
+# source: not recorded on the old site (to be added)
+# retrieved-from: https://tpp.web.unc.edu/ktps-l0/ (page modified 2026-06-08)
+# Read into Maple with:  read "ktp_l0.txt":
+KTp_I22_l0_tex := "g_{2,2}":

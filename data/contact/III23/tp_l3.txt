@@ -1,0 +1,12 @@
+# title: Thom polynomial of III23, relative dimension l=3
+# entity: III23
+# kind: tp
+# l: 3
+# codimension: 14
+# variables: c[i] = quotient Chern classes (see Conventions); s[[lambda]] = Schur polynomial in the c[i]
+# source: not recorded on the old site (to be added)
+# convention: TPP 2025
+# retrieved-from: https://tpp.web.unc.edu/thom-polynomials-relative-dimension-l3/ (page modified 2025-05-21)
+# Read into Maple with:  read "tp_l3.txt":
+Tp_III23_l3_monomial := -8*c[1]*c[4]*c[9] +12*c[1]*c[5]*c[8] -4*c[1]*c[6]*c[7] -4*c[2]*c[4]*c[8] +6*c[2]*c[5]*c[7] -2*c[2]*c[6]^2 -2*c[3]*c[4]*c[7] +2*c[3]*c[5]*c[6] -2*c[4]^2*c[6] +2*c[4]*c[5]^2 -16*c[4]*c[10] +24*c[5]*c[9] -8*c[6]*c[8]:
+Tp_III23_l3_schur := 2*s[[5,5,4]] +4*s[[6,5,3]] +8*s[[7,5,2]] +16*s[[8,5,1]] +32*s[[9,5]]:

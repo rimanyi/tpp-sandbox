@@ -1,0 +1,14 @@
+# title: Thom series of D4 (all relative dimensions at once)
+# entity: D4
+# kind: series
+# local-algebra: C[x,y,z,t]/(x,y,z,t)^2
+# tp-degree: 4l+16
+# source: not recorded on the old site (to be added)
+# convention: TPP 2026 (signs and orientations may differ from pre-2026 versions of the Thom series page)
+# retrieved-from: https://tpp.web.unc.edu/tp-linfinity/ (page modified 2026-08-02)
+# profile-1: \omega=(4)
+# box-1-1: Maple expression
+# Read into Maple with:  read "series.txt":
+Ts_D4_profile1_display := "\\(\\displaystyle F_{\\Sigma^4,(4)}=z_1^3z_2^2z_3\\)":
+F_D4_profile1 := z[1]^3*z[2]^2*z[3]:
+Ts_D4_explicit_tex := "\\Delta_{3,3,3,3}":

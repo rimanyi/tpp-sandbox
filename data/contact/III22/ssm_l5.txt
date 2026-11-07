@@ -1,0 +1,21 @@
+# title: SSM-Thom polynomial of III22, relative dimension l=5
+# entity: III22
+# kind: ssm
+# l: 5
+# codimension: 14   (the lowest-degree part is the Thom polynomial)
+# computed-up-to-degree: 16
+# variables: t = cohomological degree; c[i], s[[lambda]] as for Thom polynomials
+# source: not recorded on the old site (to be added)
+# convention: TPP 2025
+# retrieved-from: https://tpp.web.unc.edu/ssm-thom-polynomials-for-l5/ (page modified 2025-05-31)
+# Read into Maple with:  read "ssm_l5.txt":
+SSM_III22_l5_monomial :=
++t^14*( -c[6]*c[8] +c[7]^2 )
++t^15*( 2*c[1]*c[6]*c[8] -2*c[1]*c[7]^2 +5*c[6]*c[9] -5*c[7]*c[8] )
++t^16*( -3*c[1]^2*c[6]*c[8] +3*c[1]^2*c[7]^2 -11*c[1]*c[6]*c[9] +11*c[1]*c[7]*c[8] +2*c[2]*c[6]*c[8] -2*c[2]*c[7]^2 -16*c[6]*c[10] +9*c[7]*c[9] +7*c[8]^2 )
+:
+SSM_III22_l5_schur :=
++t^14*( s[[7,7]] )
++t^15*( -2*s[[7,7,1]] -7*s[[8,7]] )
++t^16*( 3*s[[7,7,1,1]] +s[[7,7,2]] +15*s[[8,7,1]] +21*s[[8,8]] +28*s[[9,7]] )
+:

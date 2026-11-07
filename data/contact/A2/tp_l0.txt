@@ -1,0 +1,12 @@
+# title: Thom polynomial of A2, relative dimension l=0
+# entity: A2
+# kind: tp
+# l: 0
+# codimension: 2
+# variables: c[i] = quotient Chern classes (see Conventions); s[[lambda]] = Schur polynomial in the c[i]
+# source: F. Ronga: Le calcul des classes duales aux singularités de Boardman d'ordre deux, Commentarii mathematici Helvetici (1972), Vol. 47, 15-35
+# convention: TPP 2025
+# retrieved-from: https://tpp.web.unc.edu/thom-polynomials-relative-dimension-l0/ (page modified 2025-06-12)
+# Read into Maple with:  read "tp_l0.txt":
+Tp_A2_l0_monomial := c[1]^2 +c[2]:
+Tp_A2_l0_schur := 2*s[[2]] +s[[1,1]]:

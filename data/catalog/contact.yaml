@@ -1,0 +1,733 @@
+# Catalog of contact mono-singularities (local algebras).
+# One entry per singularity; the site builds a page for each entry.
+# Fields: id (used in URLs and data folder names), name, mu, sigma (Thom-Boardman symbol as in Mather's list),
+#   tb_class (Thom-Boardman class, from the old Tp tables), ideal, codim (as a function of l), l_range,
+#   d (d_i = dim m^i/m^{i+1}), notes, remarks, symmetry_record, mather (true = in Mather's list of 55).
+# Migrated from tpp.web.unc.edu on 2026-11-07; edit freely.
+
+- id: A0
+  name: A0
+  mu: 0
+  sigma: \Sigma^0
+  ideal: C
+  codim: '0'
+  l_range: l=0,1,2,...
+  d: null
+  mather: true
+  tb_class: \Sigma^0
+  remarks:
+  - This contact singularity is open in its Thom-Boardman class.
+  symmetry_record: '[A0,[],[],[],[],1]'
+- id: A1
+  name: A1
+  mu: 1
+  sigma: \Sigma^1
+  ideal: (x^2)
+  codim: l+1
+  l_range: l=0,1,2,...
+  d: '1'
+  mather: true
+  tb_class: \Sigma^{1,0}
+  remarks:
+  - This contact singularity is open in its Thom-Boardman class.
+  symmetry_record: '[A1,[a[1]],[2*a[1]],[],[a[1]],1/(1-q)]'
+- id: A2
+  name: A2
+  mu: 2
+  sigma: \Sigma^{11}
+  ideal: (x^3)
+  codim: 2l+2
+  l_range: l=0,1,2,...
+  d: 1,1
+  mather: true
+  tb_class: \Sigma^{1,1,0}
+  remarks:
+  - This contact singularity is open in its Thom-Boardman class.
+  in_preparation:
+  - Motivic-Segre Thom polynomials (R. Rimányi, 2026)
+  symmetry_record: '[A2,[a[1]],[3*a[1]],[2*a[1]],[a[1],2*a[1]],1/(1-q)]'
+- id: III22
+  name: III_{22}
+  mu: 2
+  sigma: \Sigma^{20}
+  ideal: (x^2,xy,y^2)
+  ideal_alternatives:
+  - (x,y)^2
+  codim: 2l+4
+  l_range: l=1,2,...
+  d: '2'
+  mather: true
+  tb_class: \Sigma^{2,0}
+  remarks:
+  - This contact singularity is open in its Thom-Boardman class.
+  symmetry_record: '[III22,[a[1],a[2]],[2*a[1],a[1]+a[2],2*a[2]]'
+- id: A3
+  name: A3
+  mu: 3
+  sigma: \Sigma^{111}
+  ideal: (x^4)
+  codim: 3l+3
+  l_range: l=0,1,2,...
+  d: 1,1,1
+  mather: true
+  tb_class: \Sigma^{1,1,1,0}
+  remarks:
+  - This contact singularity is open in its Thom-Boardman class.
+  in_preparation:
+  - Motivic-Segre Thom polynomials (R. Rimányi, 2026)
+  symmetry_record: '[A3,[a[1]],[4*a[1]],[2*a[1],3*a[1]],[a[1],2*a[1],3*a[1]],1/(1-q)]'
+- id: I22
+  name: I_{22}
+  mu: 3
+  sigma: \Sigma^{20}
+  ideal: (x^2,y^2)
+  codim: 3l+4
+  l_range: l=0,1,2,...
+  d: 2,1
+  mather: true
+  tb_class: \Sigma^{2,0}
+  remarks:
+  - This contact singularity is open in its Thom-Boardman class.
+  symmetry_record: '[I22,[a[1],a[2]],[2*a[1],2*a[2]],[2*a[1]-a[2],2*a[2]-a[1]],[a[1],a[2],a[1]+a[2]],1/((1-q)*(1-q^2))]'
+- id: III23
+  name: III_{23}
+  mu: 3
+  sigma: \Sigma^{20}
+  ideal: (x^2,xy,y^3)
+  codim: 3l+5
+  l_range: l=1,2,3,...
+  d: 2,1
+  mather: true
+  tb_class: \Sigma^{2,0}
+  symmetry_record: '[III23,[a[1],a[2]],[2*a[1],a[1]+a[2],3*a[2]]'
+- id: C3
+  name: C3
+  mu: 3
+  sigma: \Sigma^3
+  ideal: (x^2,y^2,z^2,xy,xz,yz)
+  ideal_alternatives:
+  - (x,y,z)^2
+  codim: 3l+9
+  l_range: l=3,4,5,...
+  d: '3'
+  suggested_name: C(3)
+  mather: true
+  tb_class: \Sigma^{2,1,0}
+  symmetry_record: '[C3,[a[1],a[2],a[3]],[2*a[1],2*a[2],2*a[3],a[1]+a[2],a[1]+a[3],a[2]+a[3]]'
+- id: A4
+  name: A4
+  mu: 4
+  sigma: \Sigma^{1111}
+  ideal: (x^5)
+  codim: 4l+4
+  l_range: l=0,1,2,...
+  d: 1,1,1,1
+  mather: true
+  tb_class: \Sigma^{1,1,1,1,0}
+  remarks:
+  - This contact singularity is open in its Thom-Boardman class.
+  - 'This contact singularity is open in its Thom-Boardman class. T. Gaffney: The Thom polynomial of [latex]\overline{\Sigma^{1111}}[/latex].
+    Singularities, Part 1 (Arcata, Calif., 1981), 399-408, Proc. Sympos.. Pure Math., 40, AMS, Providence RI, 1983 This was
+    the first known Thom polynomial whose calculation required consideration of non-Morin singularities. Warning: This Thom
+    polynomial is wrongly quoted in V. A. Vassiliev, V. Arnold, V. Goryunov, O. Lyashko: Dynamical Systems VI. Singularity
+    Theory I. Encyclopaedia of Math. Sciences Vol. 6, Springer 1993'
+  in_preparation:
+  - Motivic-Segre Thom polynomials (R. Rimányi, 2026)
+  symmetry_record: '[A4,[a[1]],[5*a[1]],[2*a[1],3*a[1],4*a[1]],[a[1],2*a[1],3*a[1],4*a[1]],1/(1-q)]'
+- id: I23
+  name: I_{23}
+  mu: 4
+  sigma: \Sigma^{20}
+  ideal: (x^2+y^3,xy)
+  codim: 4l+5
+  l_range: l=0,1,2,...
+  d: 2,1,1
+  mather: true
+  tb_class: \Sigma^{2,0}
+  symmetry_record: '[I23,[3*a[1],2*a[1]],[5*a[1],6*a[1]],[3*a[1],4*a[1],2*a[1]],[3*a[1],2*a[1],4*a[1],6*a[1]],1/(1-q)]'
+- id: III24
+  name: III_{24}
+  mu: 4
+  sigma: \Sigma^{20}
+  ideal: (x^2,xy,y^4)
+  codim: 4l+6
+  l_range: l=1,2,3,...
+  d: 2,1,1
+  mather: true
+  tb_class: \Sigma^{2,0}
+  symmetry_record: '[III24,[a[1],a[2]],[2*a[1],a[1]+a[2],4*a[2]]'
+- id: III33
+  name: III_{33}
+  mu: 4
+  sigma: \Sigma^{20}
+  ideal: (x^3,xy,y^3)
+  codim: 4l+6
+  l_range: l=1,2,3,...
+  d: 2,2
+  mather: true
+  tb_class: \Sigma^{2,0}
+  symmetry_record: '[III33,[a[1],a[2]],[3*a[1],a[1]+a[2],3*a[2]]'
+- id: B4
+  name: B4
+  mu: 4
+  sigma: \Sigma^{21}
+  ideal: (x^2, xy^2, y^3)
+  codim: 4l+7
+  l_range: l=1,2,3,...
+  d: 2,2
+  suggested_name: B_4
+  mather: true
+  symmetry_record: '[B4,[a[1],a[2]],[2*a[1],a[1]+2*a[2],3*a[2]]'
+- id: C41
+  name: C_{41}
+  mu: 4
+  sigma: \Sigma^{3}
+  ideal: (xy,xz,yz,x^2-y^2,y^2-z^2)
+  codim: 4l+7
+  l_range: l=2,3,4,...
+  d: 3,1
+  suggested_name: C_{4,1}
+  notes:
+  - D_{3,0} in [MNB]
+  mather: true
+  symmetry_record: '[C41,[a[1],a[1],a[1]],[2*a[1],2*a[1],2*a[1],2*a[1],2*a[1]]'
+- id: C42
+  name: C_{42}
+  mu: 4
+  sigma: \Sigma^{3}
+  ideal: (x^2,y^2,z^2,xz,yz)
+  codim: 4l+8
+  l_range: l=2,3,4,...
+  d: 3,1
+  suggested_name: C(4,2)
+  notes:
+  - D_{2,0} in [MNB], (x^2-y^2,z^2,xy,yz,zx) --- but this representative hides a U(1) symmetry
+  mather: true
+  symmetry_record: '[C42,[a[1],a[2],a[3]],[2*a[1],2*a[2],2*a[3],a[1]+a[3],a[2]+a[3]],[2*a[1]-a[2],2*a[1]-a[3],2*a[2]-a[1],2*a[2]-a[3],2*a[3]-a[1],2*a[3]-a[2],2*a[3]-a[3]'
+- id: C43
+  name: C_{43}
+  mu: 4
+  sigma: \Sigma^{3}
+  ideal: (x^2,y^2,z^3,xy,xz,yz)
+  codim: 4l+10
+  l_range: l=3,4,5...
+  d: 3,1
+  suggested_name: C_{4,3}
+  mather: true
+  symmetry_record: '[C43,[a[1],a[2],a[3]],[2*a[1],2*a[2],3*a[3],a[1]+a[2],a[1]+a[3],a[2]+a[3]],[2*a[1]-a[2],2*a[1]-a[3],2*a[1]-2*a[3],2*a[2]-a[1]'
+- id: D4
+  name: D4
+  mu: 4
+  sigma: \Sigma^{4}
+  ideal: (x^2,y^2,z^2,w^2,xy,xz,xw,yz,yw,zw)
+  ideal_alternatives:
+  - (x,y,z,w)^2
+  codim: 4l+16
+  l_range: l=6,7,8,...
+  d: '4'
+  suggested_name: D_{4}
+  mather: true
+  symmetry_record: '[D4,[0,0,0,0],[0,0,0,0,0,0,0,0,0,0],[seq(0,i=1..36)],[0,0,0,0],1/((1-q)*(1-q^2)*(1-q^3)*(1-q^4))], # to
+    be typed in one nice day'
+- id: A5
+  name: A5
+  mu: 5
+  sigma: \Sigma^{11111}
+  ideal: (x^6)
+  codim: 5l+5
+  l_range: l=0,1,2,...
+  d: 1,1,1,1,1
+  mather: true
+  tb_class: \Sigma^{1,1,1,1,1,0}
+  remarks:
+  - This contact singularity is open in its Thom-Boardman class.
+  symmetry_record: '[A5,[a[1]],[6*a[1]],[2*a[1],3*a[1],4*a[1],5*a[1]],[a[1],2*a[1],3*a[1],4*a[1],5*a[1]],1/(1-q)]'
+- id: I24
+  name: I_{24}
+  mu: 5
+  sigma: \Sigma^{20}
+  ideal: (x^2+y^4,xy)
+  codim: 5l+6
+  l_range: l=0,1,2,...
+  d: 2,1,1,1
+  mather: true
+  tb_class: \Sigma^{2,0}
+  symmetry_record: '[I24,[4*a[1],2*a[1]],[6*a[1],8*a[1]],[4*a[1],6*a[1],4*a[1],2*a[1]],[4*a[1],2*a[1],4*a[1],6*a[1],8*a[1]],1/(1-q)]'
+- id: I33
+  name: I_{33}
+  mu: 5
+  sigma: \Sigma^{20}
+  ideal: (x^3+y^3,xy)
+  codim: 5l+6
+  l_range: l=0,1,2,...
+  d: 2,2,1
+  mather: true
+  tb_class: \Sigma^{2,0}
+  symmetry_record: '[I33,[3*a[1],3*a[1]],[6*a[1],9*a[1]],[6*a[1],3*a[1],6*a[1],3*a[1]],[3*a[1],6*a[1],3*a[1],6*a[1],9*a[1]],1/(1-q)]'
+- id: III25
+  name: III_{25}
+  mu: 5
+  sigma: \Sigma^{20}
+  ideal: (x^2,xy,y^5)
+  codim: 5l+7
+  l_range: l=1,2,3,...
+  d: 2,1,1,1
+  mather: true
+  tb_class: \Sigma^{2,0}
+  symmetry_record: '[III25,[a[1],a[2]],[2*a[1],a[1]+a[2],5*a[2]]'
+- id: III34
+  name: III_{34}
+  mu: 5
+  sigma: \Sigma^{20}
+  ideal: (x^3,xy,y^4)
+  codim: 5l+7
+  l_range: l=1,2,3,...
+  d: 2,2,1
+  mather: true
+  tb_class: \Sigma^{2,0}
+  symmetry_record: '[III34,[a[1],a[2]],[a[1]+a[2],3*a[1],4*a[2]]'
+- id: B51
+  name: B_{51}
+  mu: 5
+  sigma: \Sigma^{21}
+  ideal: (x^2,y^3)
+  codim: 5l+7
+  l_range: l=0,1,2,...
+  d: 2,2,1
+  suggested_name: B_{5,1}
+  mather: true
+  symmetry_record: '[B51,[a[1],a[2]],[2*a[1],3*a[2]],[2*a[1]-a[2],2*a[1]-2*a[2],3*a[2]-a[1],3*a[2]-a[2],3*a[2]-a[1]-a[2]]'
+- id: B52
+  name: B_{52}
+  mu: 5
+  sigma: \Sigma^{21}
+  ideal: (x^2+y^3,xy^2,y^4)
+  codim: 5l+8
+  l_range: l=1,2,3,...
+  d: 2,2,1
+  suggested_name: B_{5,2}
+  mather: true
+  symmetry_record: '[B52,[3*a[1],2*a[1]],[6*a[1],7*a[1],8*a[1]],[a[1],2*a[1],2*a[1],3*a[1],3*a[1],4*a[1],4*a[1],4*a[1],5*a[1],5*a[1],6*a[1]],[2*a[1],3*a[1],4*a[1],5*a[1],6*a[1]],1/(1-q)]'
+- id: B53
+  name: B_{53}
+  mu: 5
+  sigma: \Sigma^{21}
+  ideal: (x^2,xy^2,y^4)
+  codim: 5l+9
+  l_range: l=1,2,3,...
+  d: 2,2,1
+  suggested_name: B_{5,3}
+  mather: true
+  symmetry_record: '[B53,[a[1],a[2]],[2*a[1],a[1]+2*a[2],4*a[2]]'
+- id: B54
+  name: B_{54}
+  mu: 5
+  sigma: \Sigma^{22}
+  ideal: (x^3,x^2y,xy^2,y^3)
+  ideal_alternatives:
+  - (x,y)^3
+  codim: 5l+10
+  l_range: l=2,3,4,...
+  d: 2,3
+  suggested_name: B_{5,4}
+  mather: true
+  symmetry_record: '[B54,[a[1],a[2]],[3*a[1],2*a[1]+a[2],a[1]+2*a[2],3*a[2]],[3*a[1]-a[1],3*a[1]-a[1]-a[2],3*a[1]-a[2],3*a[1]-2*a[2],2*a[1]+a[2]-a[1],2*a[1]+a[2]-a[1]-a[2],2*a[1]+a[2]-a[2],2*a[1]+a[2]-2*a[2],a[1]+2*a[2]-a[1],a[1]+2*a[2]-2*a[1],a[1]+2*a[2]-a[1]-a[2],a[1]+2*a[2]-a[2],a[1]+2*a[2]-2*a[2],3*a[2]-a[1],3*a[2]-2*a[1],3*a[2]-a[1]-a[2],3*a[2]-a[2],3*a[2]-2*a[2]],[a[1],a[2],2*a[1],a[1]+a[2],2*a[2]],1/((1-q)*(1-q^2))]'
+- id: C51
+  name: C_{51}
+  mu: 5
+  sigma: \Sigma^3
+  ideal: (x^2+y^2+z^2,xy,xz,yz)
+  codim: 5l+7
+  l_range: l=1,2,...
+  d: 3,2
+  suggested_name: C_{5,1}
+  notes:
+  - '[MNB] Table 7.8, line 1'
+  - a.k.a. (x^2,y^2,z^2-xy,xz+yz) in [MNB] Table 7.8 line 2
+  mather: true
+  symmetry_record: '[C51,[a[1],a[1],a[1]],[2*a[1],2*a[1],2*a[1],2*a[1]],[a[1],a[1],a[1],a[1],a[1],a[1],a[1],a[1],a[1]],[a[1],a[1],a[1],2*a[1],2*a[1]],1/(1-q)]'
+- id: C52
+  name: C_{52}
+  mu: 5
+  sigma: \Sigma^3
+  ideal: (x^2,y^2,z^2,xy+xz)
+  codim: 5l+8
+  l_range: l=1,2,3,...
+  d: 3,2
+  suggested_name: C_{5,2}
+  notes:
+  - '[MNB] Table 7.8, line 3'
+  - a.k.a. (x^2,y^2-z^2,xy+xz,yz) in [MNB] Table 7.8 line 4
+  - a.k.a. (x^2,y^2-z^2,xy,yz) in [P] Table 1
+  mather: true
+  symmetry_record: '[C52,[a[1],a[2],a[2]],[2*a[1],2*a[2],2*a[2],a[1]+a[2]],[2*a[1]-a[1],2*a[1]-a[2],2*a[1]-a[2],2*a[1]-2*a[2],2*a[2]-a[1],2*a[2]-a[2],2*a[2]-a[2],2*a[2]-a[1],2*a[2]-a[2],a[1]],[a[1],a[2],a[2],a[1]+a[2],2*a[2]],1/(1-q)^2]'
+- id: C53
+  name: C_{53}
+  mu: 5
+  sigma: \Sigma^3
+  ideal: (x^2,xy+z^3,y^2,xz,yz)
+  codim: 5l+8
+  l_range: l=2,3,4,...
+  d: 3,1,1
+  suggested_name: C_{5,3}
+  notes:
+  - a.k.a. (y^2+x^3,z^2+x^3,xy,xz,yz) in [MNB] Table 7.7, line 4 --- this presentation does not show the U(1)^2 symmetry,
+    only U(1)
+  - a.k.a. (x^2,xy+z^3,y^2,xz,yz,z^4) in [P] Table 1 (in this presentation the last generator is redundant)
+  mather: true
+  symmetry_record: '[C53,[3*a[1],3*a[2],a[1]+a[2]],[6*a[1],3*a[1]+3*a[2],6*a[2],4*a[1]+a[2],a[1]+4*a[2]],[6*a[1]-3*a[2],6*a[1]-a[1]-a[2],6*a[1]-2*a[1]-2*a[2],3*a[1]+3*a[2]-3*a[2],3*a[1]+3*a[2]-a[1]-a[2],6*a[2]-3*a[1],6*a[2]-3*a[2],6*a[2]-a[1]-a[2],6*a[2]-2*a[1]-2*a[2],4*a[1]+a[2]-3*a[1],4*a[1]+a[2]-3*a[2],4*a[1]+a[2]-a[1]-a[2],a[1]+4*a[2]-3*a[1],a[1]+4*a[2]-3*a[2],a[1]+4*a[2]-a[1]-a[2]],[3*a[1],3*a[1]+3*a[2],3*a[2],a[1]+a[2],2*a[1]+2*a[2]],1/((1-q)*(1-q^2))]'
+- id: C54
+  name: C_{54}
+  mu: 5
+  sigma: \Sigma^3
+  ideal: (x^2+yz,xz,y^2,z^2)
+  codim: 5l+9
+  l_range: l=1,2,3,4,...
+  d: 3,2
+  suggested_name: C_{5,4}
+  notes:
+  - '[MNB] Table 7.8, line 10'
+  - a.k.a. (xy,z^2,xz-yz,x^2+y^2-xz) in [P] Table 1
+  mather: true
+  symmetry_record: '[C54,[a[1],a[2],2*a[1]-a[2]],[2*a[1],3*a[1]-a[2],2*a[2],4*a[1]-2*a[2]],[a[1],2*a[1]-a[2],a[2],2*a[1]-a[2],3*a[1]-2*a[2],2*a[2]-a[1],3*a[2]-2*a[1],3*a[1]-2*a[2],4*a[1]-3*a[2],3*a[1]-3*a[2],2*a[1]-2*a[2]],[a[1],a[2],2*a[1]-a[2],2*a[1],a[1]+a[2]],1/(1-q)^2]'
+- id: C55
+  name: C_{55}
+  mu: 5
+  sigma: \Sigma^3
+  ideal: (xy,xz,y^2,z^2,x^3)
+  codim: 5l+9
+  l_range: l=2,3,4,...
+  d: 3,2
+  suggested_name: C_{5,5}
+  notes:
+  - '[MNB] Table 7.8 line 5'
+  - a.k.a. (x^2-y^2,xy,xz,yz,z^3) in [MNB] Table 7.8 line 7
+  mather: true
+  symmetry_record: '[C55,[a[1],a[2],a[3]],[a[1]+a[2],a[1]+a[3],2*a[2],2*a[3],3*a[1]]'
+- id: C56
+  name: C_{56}
+  mu: 5
+  sigma: \Sigma^3
+  ideal: (y^2+x^3,z^2,xy,xz,yz)
+  codim: 5l+9
+  l_range: l=2,3,4,...
+  d: 3,1,1
+  suggested_name: C_{5,6}
+  notes:
+  - '[MNB] Table 7.7, line 5'
+  - a.k.a. (x^2,xy,y^2+z^3,xz,yz,z^4) in [P] Table 1 (in this presentation the last generator is redundant)
+  mather: true
+  symmetry_record: '[C56,[2*a[1],3*a[1],a[2]],[6*a[1],2*a[2],5*a[1],2*a[1]+a[2],3*a[1]+a[2]]'
+- id: C57
+  name: C_{57}
+  mu: 5
+  sigma: \Sigma^3
+  ideal: (xy,yz,z^2,y^2-xz,x^3)
+  codim: 5l+10
+  l_range: l=2,3,4,...
+  d: 3,2
+  suggested_name: C_{5,7}
+  notes:
+  - '[MNB] Table 7.8, line 11'
+  mather: true
+  symmetry_record: '[C57,[2*a[1],a[1]+a[2],2*a[2]],[3*a[1]+a[2],a[1]+3*a[2],4*a[2],2*a[1]+2*a[2],6*a[1]],[3*a[1]+a[2]-a[1]-a[2],3*a[1]+a[2]-2*a[2],a[1]+3*a[2]-2*a[1],a[1]+3*a[2]-4*a[1],a[1]+3*a[2]-a[1]-a[2],a[1]+3*a[2]-2*a[2],4*a[2]-2*a[1],4*a[2]-4*a[1],4*a[2]-2*a[1]-2*a[2],4*a[2]-a[1]-a[2],4*a[2]-2*a[2],2*a[1]+2*a[2]-a[1]-a[2],2*a[1]+2*a[2]-2*a[2],6*a[1]-2*a[1],6*a[1]-2*a[1]-2*a[2],6*a[1]-a[1]-a[2],6*a[1]-2*a[2]],[2*a[1],4*a[1],2*a[1]+2*a[2],a[1]+a[2],2*a[2]],1/(1-q)^2]'
+- id: C58
+  name: C_{58}
+  mu: 5
+  sigma: \Sigma^3
+  ideal: (x^2,xy,y^2,z^2)
+  codim: 5l+11
+  l_range: l=3,4,5,... (for l=1,2 this exists, but is not in the nice dimension range)
+  d: 3,2
+  suggested_name: C_{5,8}
+  notes:
+  - '[P] Table 1'
+  mather: true
+  symmetry_record: '[C58,[a[1],a[2],a[3]],[2*a[1],2*a[2],2*a[3],a[1]+a[2]],[2*a[1]-a[2],2*a[1]-a[2]-a[3],2*a[1]-a[3],2*a[2]-a[1],2*a[2]-a[1]-a[3],2*a[2]-a[2],2*a[2]-a[2]-a[3],2*a[2]-a[3],2*a[3]-a[1],2*a[3]-a[2],a[1]+a[2]-a[2],a[1]+a[2]-a[2]-a[3],a[1]+a[2]-a[3]],[a[1],a[1]+a[3],a[2],a[2]+a[3],a[3]],1/((1-q)*(1-q)*(1-q^2))]'
+- id: C59
+  name: C_{59}
+  mu: 5
+  sigma: \Sigma^3
+  ideal: (x^2,xy,y^2,xz,yz,z^4)
+  codim: 5l+11
+  l_range: l=3,4,5,...
+  d: 3,1,1
+  suggested_name: C_{5,9}
+  notes:
+  - '[P] Table 1'
+  mather: true
+  symmetry_record: '[C59,[a[1],a[2],a[3]],[2*a[1],a[1]+a[2],2*a[2],a[1]+a[3],a[2]+a[3],4*a[3]],[2*a[1]-a[2],2*a[1]-a[3],2*a[1]-2*a[3],2*a[1]-3*a[3]'
+- id: C510
+  name: C_{5,10}
+  mu: 5
+  sigma: \Sigma^3
+  ideal: (x^2,xy,xz,yz,y^3,z^3)
+  codim: 5l+11
+  l_range: l=3,4,5,...
+  d: 3,2
+  suggested_name: C_{5,10}
+  notes:
+  - '[P] Table 1'
+  mather: true
+  symmetry_record: '[C510, [a[1],a[2],a[3]],[2*a[1],a[1]+a[2],a[1]+a[3],a[2]+a[3],3*a[2],3*a[3]],[2*a[1]-a[2],2*a[1]-2*a[2],2*a[1]-a[3],2*a[1]-2*a[3],a[1]+a[2]-a[1],a[1]+a[2]-a[2],a[1]+a[2]-a[3],a[1]+a[2]-2*a[3],a[1]+a[3]-a[1],a[1]+a[3]-a[2],a[1]+a[3]-2*a[2],a[1]+a[3]-a[3],a[2]+a[3]-a[1],a[2]+a[3]-a[2],a[2]+a[3]-a[3],3*a[2]-a[1],3*a[2]-a[2],3*a[2]-a[3],3*a[2]-2*a[3],3*a[3]-a[1],3*a[3]-a[2],3*a[3]-2*a[2],3*a[3]-a[3]],[a[1],a[2],a[3],2*a[2],2*a[3]],1/((1-q)*(1-q)*(1-q^2))]'
+- id: C511
+  name: C_{5,11}
+  mu: 5
+  sigma: \Sigma^3
+  ideal: (x^2,xy,xz,y^2,yz^2,z^3)
+  codim: 5l+12
+  l_range: l=5,6,7,... (for l=3,4 this exists, but is not in the nice dimension range)
+  d: 3,2
+  suggested_name: C_{5,11}
+  notes:
+  - '[P] Table 1'
+  mather: true
+  symmetry_record: '[C511,[a[1],a[2],a[3]],[2*a[1],a[1]+a[2],a[1]+a[3],2*a[2],a[2]+2*a[3],3*a[3]]'
+- id: D51
+  name: D_{51}
+  mu: 5
+  sigma: \Sigma^4
+  ideal: (x^2,y^2,z^2,w^2,xy-zw,xz,xw,yz,yw)
+  codim: 5l+11
+  l_range: l=5,6,7,...
+  d: 4,1
+  suggested_name: D_{5,1}
+  mather: true
+  symmetry_record: '[D51,[a[1],a[3]-a[1],a[2],a[3]-a[2]],[2*a[1],2*a[3]-2*a[1],2*a[2],2*a[3]-2*a[2],a[3],a[1]+a[2],a[1]-a[2]+a[3],-a[1]+a[2]+a[3],-a[1]-a[2]+2*a[3]]'
+- id: D52
+  name: D_{52}
+  mu: 5
+  sigma: \Sigma^4
+  ideal: (x^2,y^2+z^2,y^2+w^2,xy,xz,xw,yz,yw,zw)
+  codim: 5l+12
+  l_range: l=5,6,7,...
+  d: 4,1
+  suggested_name: D_{5,2}
+  mather: true
+  symmetry_record: '[D52,[0,0,0,0],[0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0],1/((1-q)^2*(1-q^2))],
+    # to be typed in one nice day; 1/((1-q)*(1-q)*(1-q^2)*(1-q^3))'
+- id: D53
+  name: D_{53}
+  mu: 5
+  sigma: \Sigma^4
+  ideal: (x^2,y^2,z^2,w^2,xy,xz,xw,yz,yw)
+  codim: 5l+14
+  l_range: l=7,8,9,... (for l=5,6 this exists, but is not in the nice dimension range)
+  d: 4,1
+  suggested_name: D_{5,3}
+  mather: true
+  symmetry_record: '[D53,[0,0,0,0],[0,0,0,0,0,0,0,0,0],[seq(0,i=1..35)],[0,0,0,0,0],1/((1-q)^2*(1-q^2)^2)], # to be typed
+    in one nice day'
+- id: D54
+  name: D_{54}
+  mu: 5
+  sigma: \Sigma^4
+  ideal: (x^2,y^2,z^2,xy,xz,xw,yz,yw,zw,w^3)
+  codim: 5l+17
+  l_range: l=10,11,12,... (for l=6,7,8,9 this exists, but is not in the nice dimension range)
+  d: 4,1
+  suggested_name: D_{5,4}
+  mather: true
+  symmetry_record: '[D54,[0,0,0,0],[0,0,0,0,0,0,0,0,0,0],[seq(0,i=1..43)],[0,0,0,0,0],1/((1-q)^2*(1-q^2)*(1-q^3))], # to be
+    typed in one nice day'
+- id: E5
+  name: E5
+  mu: 5
+  sigma: \Sigma^5
+  ideal: (x^2,y^2,z^2,v^2,w^2,xy,...,vw)
+  ideal_alternatives:
+  - (x,y,z,v,w)^2
+  codim: 5l+25
+  l_range: l=18,19,20,... (for l=10,11,12,13,14,15,16,17 this exists, but is not in the nice dimension range)
+  d: '5'
+  suggested_name: E_{5}
+  mather: true
+  symmetry_record: '[E5,[0,0,0,0,0],[seq(0,i=1..15)],[seq(0,i=1..70)],[0,0,0,0,0],1/((1-q)*(1-q^2)*(1-q^3)*(1-q^4)*(1-q^5))],#
+    to be typed in one nice day'
+- id: A6
+  name: A6
+  mu: 6
+  sigma: \Sigma^{111111}
+  ideal: (x^7)
+  codim: 6l+6
+  l_range: l=0,1,2,...
+  d: 1,1,1,1,1,1
+  mather: true
+  tb_class: \Sigma^{1,1,1,1,1,1,0}
+  symmetry_record: '[A6,[a[1]],[7*a[1]],[2*a[1],3*a[1],4*a[1],5*a[1],6*a[1]],[a[1],2*a[1],3*a[1],4*a[1],5*a[1],6*a[1]],1/(1-q)]'
+- id: I25
+  name: I_{25}
+  mu: 6
+  sigma: \Sigma^{20}
+  ideal: (x^2+y^5,xy)
+  codim: 6l+7
+  l_range: l=0,1,2,3,...
+  d: 2,1,1,1,1
+  mather: true
+  tb_class: \Sigma^{2,0}
+  symmetry_record: '[I25,[5*a[1],2*a[1]],[7*a[1],10*a[1]],[5*a[1],8*a[1],6*a[1],4*a[1],2*a[1]],[5*a[1],2*a[1],4*a[1],6*a[1],8*a[1],10*a[1]],1/(1-q)]'
+- id: I34
+  name: I_{34}
+  mu: 6
+  sigma: \Sigma^{20}
+  ideal: (x^3+y^4,xy)
+  codim: 6l+7
+  l_range: l=0,1,2,3,...
+  d: 2,2,1,1
+  mather: true
+  tb_class: \Sigma^{2,0}
+  symmetry_record: '[I34,[4*a[1],3*a[1]],[7*a[1],12*a[1]],[8*a[1],4*a[1],9*a[1],6*a[1],3*a[1]],[4*a[1],8*a[1],12*a[1],3*a[1],6*a[1],9*a[1]],1/(1-q)]'
+- id: III26
+  name: III_{26}
+  mu: 6
+  sigma: \Sigma^{20}
+  ideal: (x^2,xy,y^6)
+  codim: 6l+8
+  l_range: l=1,2,3 only. (For larger l this is not in the nice dimension range.)
+  d: 2,1,1,1,1
+  mather: true
+  symmetry_record: '[III26,[a[1],a[2]],[2*a[1],a[1]+a[2],6*a[2]]'
+- id: III35
+  name: III_{35}
+  mu: 6
+  sigma: \Sigma^{20}
+  ideal: (x^3,xy,y^5)
+  codim: 6l+8
+  l_range: l=1,2,3 only. (For larger l this is not in the nice dimension range.)
+  d: 2,2,1,1
+  mather: true
+  symmetry_record: '[III35,[a[1],a[2]],[a[1]+a[2],3*a[1],5*a[2]]'
+- id: III44
+  name: III_{44}
+  mu: 6
+  sigma: \Sigma^{20}
+  ideal: (x^4,xy,y^4)
+  codim: 6l+8
+  l_range: l=1,2,3 only. (For larger l this is not in the nice dimension range.)
+  d: 2,2,2
+  mather: true
+  symmetry_record: '[III44,[a[1],a[2]],[a[1]+a[2],4*a[1],4*a[2]]'
+- id: B6
+  name: B6
+  mu: 6
+  sigma: \Sigma^{21}
+  ideal: (x^2+y^3,xy^2)
+  codim: 6l+8
+  l_range: l=0,1,2,3 only. (For larger l this is not in the nice dimension range.)
+  d: 2,2,1,1
+  suggested_name: B_{6}
+  mather: true
+  symmetry_record: '[B6,[3*a[1],2*a[1]],[6*a[1],7*a[1]],[3*a[1],4*a[1],a[1],2*a[1],4*a[1],5*a[1]]'
+- id: C6
+  name: C6
+  mu: 6
+  sigma: \Sigma^3
+  ideal: (x^2+z^3,y^2+z^3,xz,yz)
+  codim: 6l+8
+  l_range: l=1,2,3 only. (For larger l this is not in the nice dimension range.)
+  d: 3,2,1
+  suggested_name: C(6)
+  notes:
+  - 'another presentation: (x^2+y^2+z^3,xy,xz,yz)'
+  mather: true
+  symmetry_record: '[C6,[3*a[1],3*a[1],2*a[1]],[6*a[1],6*a[1],5*a[1],5*a[1]],[3*a[1],3*a[1],4*a[1],3*a[1],3*a[1],4*a[1],2*a[1],2*a[1],2*a[1],2*a[1],2*a[1]]'
+- id: A7
+  name: A7
+  mu: 7
+  sigma: \Sigma^{1111111}
+  ideal: (x^8)
+  codim: 7l+7
+  l_range: l=0,1 only. (For larger l this is not in the nice dimension range.)
+  d: 1,1,1,1,1,1,1
+  mather: true
+  tb_class: \Sigma^{1,1,1,1,1,1,1,0}
+  symmetry_record: '[A7,[a[1]],[8*a[1]],[2*a[1],3*a[1],4*a[1],5*a[1],6*a[1],7*a[1]],[a[1],2*a[1],3*a[1],4*a[1],5*a[1],6*a[1],7*a[1]],1/(1-q)]'
+- id: I26
+  name: I_{26}
+  mu: 7
+  sigma: \Sigma^{20}
+  ideal: (x^2+y^6,xy)
+  codim: 7l+8
+  l_range: l=0 only. (For larger l this is not in the nice dimension range.)
+  d: 2,1,1,1,1,1
+  mather: true
+  tb_class: \Sigma^{2,0}
+  symmetry_record: '[I26,[6*a[1],2*a[1]],[8*a[1],12*a[1]],[6*a[1],10*a[1],8*a[1],6*a[1],4*a[1],2*a[1]],[6*a[1],2*a[1],4*a[1],6*a[1],8*a[1],10*a[1],12*a[1]],1/(1-q)]'
+- id: I35
+  name: I_{35}
+  mu: 7
+  sigma: \Sigma^{20}
+  ideal: (x^3+y^5,xy)
+  codim: 7l+8
+  l_range: l=0 only. (For larger l this is not in the nice dimension range.)
+  d: 2,2,1,1,1
+  mather: true
+  tb_class: \Sigma^{2,0}
+  symmetry_record: '[I35,[5*a[1],3*a[1]],[8*a[1],15*a[1]],[10*a[1],5*a[1],12*a[1],9*a[1],6*a[1],3*a[1]],[5*a[1],10*a[1],15*a[1],3*a[1],6*a[1],9*a[1],12*a[1]],1/(1-q)]'
+- id: I44
+  name: I_{44}
+  mu: 7
+  sigma: \Sigma^{20}
+  ideal: (x^4+y^4,xy)
+  codim: 7l+8
+  l_range: l=0 only. (For larger l this is not in the nice dimension range.)
+  d: 2,2,2,1
+  mather: true
+  tb_class: \Sigma^{2,0}
+  symmetry_record: '[I44,[4*a[1],4*a[1]],[8*a[1],16*a[1]],[12*a[1],8*a[1],4*a[1],12*a[1],8*a[1],4*a[1]]'
+- id: A8
+  name: A8
+  mu: 8
+  sigma: \Sigma^{11111111}
+  ideal: (x^9)
+  codim: 8l+8
+  l_range: l=0 only. (For larger l this is not in the nice dimension range.)
+  d: 1,1,1,1,1,1,1,1
+  mather: true
+  tb_class: \Sigma^{1,1,1,1,1,1,1,1,0}
+  symmetry_record: '[A8,[a[1]],[9*a[1]],[2*a[1],3*a[1],4*a[1],5*a[1],6*a[1],7*a[1],8*a[1]],   [a[1],2*a[1],3*a[1],4*a[1],5*a[1],6*a[1],7*a[1],8*a[1]],1/(1-q)]'
+- id: A9
+  name: A9
+  mather: false
+  mu: 9
+  ideal: (x^10)
+  tb_class: \Sigma^{1,1,1,1,1,1,1,1,1,0}
+  remarks:
+  - This contact singularity is open in its Thom-Boardman class.
+  symmetry_record: '[A9,[a[1]],[10*a[1]],[2*a[1],3*a[1],4*a[1],5*a[1],6*a[1],7*a[1],8*a[1],9*a[1]],[a[1],2*a[1],3*a[1],4*a[1],5*a[1],6*a[1],7*a[1],8*a[1],9*a[1]],1/(1-q)]'
+- id: I27
+  name: I27
+  mather: false
+  mu: 8
+  ideal: (x^2+y^7,xy)
+  tb_class: \Sigma^{2,0}
+  symmetry_record: '[I27,[7*a[1],2*a[1]],[9*a[1],14*a[1]],[7*a[1],12*a[1],10*a[1],8*a[1],6*a[1],4*a[1],2*a[1]],[7*a[1],2*a[1],4*a[1],6*a[1],8*a[1],10*a[1],12*a[1]],1/(1-q)]'
+- id: I36
+  name: I36
+  mather: false
+  mu: 8
+  ideal: (x^3+y^6,xy)
+  symmetry_record: '[I36,[6*a[1],3*a[1]],[9*a[1],18*a[1]],[12*a[1],6*a[1],15*a[1],12*a[1],9*a[1],6*a[1],3*a[1]],[6*a[1],12*a[1],18*a[1],3*a[1],6*a[1],9*a[1],12*a[1],15*a[1]],1/(1-q)]'
+- id: I45
+  name: I45
+  mather: false
+  mu: 8
+  ideal: (x^4+y^5,xy)
+  tb_class: \Sigma^{2,0}
+  symmetry_record: '[I45,[5*a[1],4*a[1]],[9*a[1],20*a[1]],[15*a[1],10*a[1],5*a[1],16*a[1],12*a[1],8*a[1],4*a[1]]'
+- id: ideal_x2py3_y4
+  name: (x^2+y^3,y^4)
+  mather: false
+  ideal: (x^2+y^3,y^4)
+  tex: (x^2+y^3,y^4)
+- id: ideal_x2py4_xy2
+  name: (x^2+y^4,xy^2)
+  mather: false
+  ideal: (x^2+y^4,xy^2)
+  tex: (x^2+y^4,xy^2)
+- id: Sigma3-pencil
+  name: Σ³ pencil
+  mather: false
+  tex: \textstyle\bigcup_{\lambda}(x^2-\lambda yz,\,y^2-\lambda xz,\,z^2-\lambda xy)
+  notes:
+  - A one-parameter family; the union is open in Σ³ (l=0).

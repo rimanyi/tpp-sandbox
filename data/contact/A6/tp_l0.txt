@@ -1,0 +1,12 @@
+# title: Thom polynomial of A6, relative dimension l=0
+# entity: A6
+# kind: tp
+# l: 0
+# codimension: 6
+# variables: c[i] = quotient Chern classes (see Conventions); s[[lambda]] = Schur polynomial in the c[i]
+# source: R. Rimanyi: Thom polynomials, symmetries and incidences of singularities; Inv. Math. 143, 499-521 (2001)
+# convention: TPP 2025
+# retrieved-from: https://tpp.web.unc.edu/thom-polynomials-relative-dimension-l0/ (page modified 2025-06-12)
+# Read into Maple with:  read "tp_l0.txt":
+Tp_A6_l0_monomial := c[1]^6 +15*c[1]^4*c[2] +55*c[1]^3*c[3] +30*c[1]^2*c[2]^2 +141*c[1]^2*c[4] +79*c[1]*c[2]*c[3] +5*c[2]^3 +202*c[1]*c[5] +55*c[2]*c[4] +17*c[3]^2 +120*c[6]:
+Tp_A6_l0_schur := 720*s[[6]] +266*s[[3,3]] +770*s[[4,2]] +1044*s[[5,1]] +70*s[[2,2,2]] +455*s[[3,2,1]] +580*s[[4,1,1]] +84*s[[2,2,1,1]] +155*s[[3,1,1,1]] +20*s[[2,1,1,1,1]] +s[[1,1,1,1,1,1]]:

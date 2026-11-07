@@ -1,0 +1,11 @@
+# title: K-theoretic Thom polynomial of A3, relative dimension l=1
+# entity: A3
+# kind: ktp
+# l: 1
+# codimension: 6
+# format: TeX-like Grothendieck expansion g_{lambda}, stored as a Maple string (to be normalised to Maple syntax)
+# variables: g_{lambda} = (stable) Grothendieck polynomial; K-theoretic fundamental class = class of the structure sheaf of a resolution, pushed forward
+# source: unpublished
+# retrieved-from: https://tpp.web.unc.edu/ktps-l1/ (page modified 2025-02-08)
+# Read into Maple with:  read "ktp_l1.txt":
+KTp_A3_l1_tex := "g_{2,2,2}+ 5g_{3,2,1}+ 19g_{4,2}+ 6g_{4,1,1}+ 30g_{5,1}+ 36g_{6} - ( 5g_{3,2,2}+ 35g_{4,2,1}+ 91g_{5,2}+ 39g_{5,1,1}+ 141g_{6,1}+ 108g_{7} ) + 10g_{4,2,2}+ 110g_{5,2,1}+ 195g_{6,2}+ 110g_{6,1,1}+ 283g_{7,1}+ 141g_{8} - ( 10g_{5,2,2}+ 205g_{6,2,1}+ 249g_{7,2}+ 176g_{7,1,1}+ 316g_{8,1}+ 102g_{9}) + 5g_{6,2,2}+ 251g_{7,2,1}+ 210g_{8,2}+ 175g_{8,1,1}+ 213g_{9,1}+ 43g_{10} - (g_{7,2,2}+ 210g_{8,2,1}+ 120g_{9,2}+ 111g_{9,1,1}+ 87g_{10,1}+ 10g_{11} ) + 120g_{9,2,1}+ 45g_{10,2}+ 44g_{10,1,1}+ 20g_{11,1}+ g_{12} - (45g_{10,2,1}+ 10g_{11,2}+ 10g_{11,1,1}+ 2g_{12,1} ) + 10g_{11,2,1}+ g_{12,2}+ g_{12,1,1} - g_{12,2,1}":

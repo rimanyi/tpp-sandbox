@@ -1,0 +1,13 @@
+# title: Thom polynomial of Sigma3-pencil, relative dimension l=0
+# entity: Sigma3-pencil
+# kind: tp
+# l: 0
+# codimension: 9
+# variables: c[i] = quotient Chern classes (see Conventions); s[[lambda]] = Schur polynomial in the c[i]
+# source: not recorded on the old site (to be added)
+# note: heading on the old page: codimension 9 --- beyond Mather's nice dimensions
+# convention: TPP 2025
+# retrieved-from: https://tpp.web.unc.edu/thom-polynomials-relative-dimension-l0/ (page modified 2025-06-12)
+# Read into Maple with:  read "tp_l0.txt":
+Tp_Sigma3_pencil_l0_monomial := -c[1]*c[3]*c[5] +c[1]*c[4]^2 +c[2]^2*c[5] -2*c[2]*c[3]*c[4] +c[3]^3:
+Tp_Sigma3_pencil_l0_schur := s[[3,3,3]]:

@@ -1,0 +1,13 @@
+# title: SSM-Thom polynomial of A2, relative dimension l=6
+# entity: A2
+# kind: ssm
+# l: 6
+# codimension: 14   (the lowest-degree part is the Thom polynomial)
+# computed-up-to-degree: 14
+# variables: t = cohomological degree; c[i], s[[lambda]] as for Thom polynomials
+# source: not recorded on the old site (to be added)
+# convention: TPP 2025
+# retrieved-from: https://tpp.web.unc.edu/ssm-thom-polynomials-for-l6/ (page modified 2025-05-31)
+# Read into Maple with:  read "ssm_l6.txt":
+SSM_A2_l6_monomial := +t^14*( 32*c[1]*c[13] +16*c[2]*c[12] +8*c[3]*c[11] +4*c[4]*c[10] +2*c[5]*c[9] +c[6]*c[8] +c[7]^2 +64*c[14] ):
+SSM_A2_l6_schur := +t^14*( 128*s[[14]] +s[[7,7]] +2*s[[8,6]] +4*s[[9,5]] +8*s[[10,4]] +16*s[[11,3]] +32*s[[12,2]] +64*s[[13,1]] ):

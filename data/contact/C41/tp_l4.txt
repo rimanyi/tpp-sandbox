@@ -1,0 +1,12 @@
+# title: Thom polynomial of C41, relative dimension l=4
+# entity: C41
+# kind: tp
+# l: 4
+# codimension: 23
+# variables: c[i] = quotient Chern classes (see Conventions); s[[lambda]] = Schur polynomial in the c[i]
+# source: not recorded on the old site (to be added)
+# convention: TPP 2025
+# retrieved-from: https://tpp.web.unc.edu/thom-polynomials-relative-dimension-l4/ (page modified 2025-05-21)
+# Read into Maple with:  read "tp_l4.txt":
+Tp_C41_l4_monomial := -3*c[1]*c[5]*c[7]*c[10] +3*c[1]*c[5]*c[8]*c[9] +3*c[1]*c[6]^2*c[10] -3*c[1]*c[6]*c[7]*c[9] -3*c[1]*c[6]*c[8]^2 +3*c[1]*c[7]^2*c[8] -c[2]*c[5]*c[7]*c[9] +c[2]*c[5]*c[8]^2 +c[2]*c[6]^2*c[9] -2*c[2]*c[6]*c[7]*c[8] +c[2]*c[7]^3 -7*c[5]*c[7]*c[11] +4*c[5]*c[8]*c[10] +3*c[5]*c[9]^2 +7*c[6]^2*c[11] -4*c[6]*c[7]*c[10] -10*c[6]*c[8]*c[9] +4*c[7]^2*c[9] +3*c[7]*c[8]^2:
+Tp_C41_l4_schur := s[[7,7,7,2]] +4*s[[8,7,7,1]] +6*s[[8,8,7]] +11*s[[9,7,7]]:

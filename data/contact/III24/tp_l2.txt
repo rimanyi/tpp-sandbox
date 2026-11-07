@@ -1,0 +1,12 @@
+# title: Thom polynomial of III24, relative dimension l=2
+# entity: III24
+# kind: tp
+# l: 2
+# codimension: 14
+# variables: c[i] = quotient Chern classes (see Conventions); s[[lambda]] = Schur polynomial in the c[i]
+# source: not recorded on the old site (to be added)
+# convention: TPP 2025
+# retrieved-from: https://tpp.web.unc.edu/thom-polynomials-relative-dimension-l2/ (page modified 2025-05-21)
+# Read into Maple with:  read "tp_l2.txt":
+Tp_III24_l2_monomial := -36*c[1]^2*c[3]*c[9] +50*c[1]^2*c[4]*c[8] -12*c[1]^2*c[5]*c[7] -2*c[1]^2*c[6]^2 -30*c[1]*c[2]*c[3]*c[8] +43*c[1]*c[2]*c[4]*c[7] -13*c[1]*c[2]*c[5]*c[6] -13*c[1]*c[3]^2*c[7] +13*c[1]*c[3]*c[4]*c[6] -9*c[1]*c[3]*c[5]^2 +9*c[1]*c[4]^2*c[5] -6*c[2]^2*c[3]*c[7] +9*c[2]^2*c[4]*c[6] -3*c[2]^2*c[5]^2 -5*c[2]*c[3]^2*c[6] +2*c[2]*c[3]*c[4]*c[5] +3*c[2]*c[4]^3 -2*c[3]^3*c[5] +2*c[3]^2*c[4]^2 -180*c[1]*c[3]*c[10] +246*c[1]*c[4]*c[9] -58*c[1]*c[5]*c[8] -8*c[1]*c[6]*c[7] -78*c[2]*c[3]*c[9] +109*c[2]*c[4]*c[8] -30*c[2]*c[5]*c[7] -c[2]*c[6]^2 -35*c[3]^2*c[8] +34*c[3]*c[4]*c[7] -26*c[3]*c[5]*c[6] +24*c[4]^2*c[6] +3*c[4]*c[5]^2 -216*c[3]*c[11] +292*c[4]*c[10] -68*c[5]*c[9] -4*c[6]*c[8] -4*c[7]^2:
+Tp_III24_l2_schur := 528*s[[9,4,1]] +288*s[[9,5]] +640*s[[10,4]] +16*s[[6,4,2,2]] +50*s[[6,4,3,1]] +89*s[[6,4,4]] +28*s[[6,5,2,1]] +62*s[[6,5,3]] +8*s[[6,6,1,1]] +28*s[[6,6,2]] +84*s[[7,4,2,1]] +180*s[[7,4,3]] +40*s[[7,5,1,1]] +128*s[[7,5,2]] +64*s[[7,6,1]] +16*s[[7,7]] +104*s[[8,4,1,1]] +328*s[[8,4,2]] +224*s[[8,5,1]] +96*s[[8,6]] +2*s[[4,4,3,3]] +5*s[[4,4,4,2]] +12*s[[5,4,3,2]] +24*s[[5,4,4,1]] +4*s[[5,5,2,2]] +12*s[[5,5,3,1]] +24*s[[5,5,4]]:

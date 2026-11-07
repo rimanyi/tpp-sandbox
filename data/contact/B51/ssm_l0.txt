@@ -1,0 +1,19 @@
+# title: SSM-Thom polynomial of B51, relative dimension l=0
+# entity: B51
+# kind: ssm
+# l: 0
+# codimension: 7   (the lowest-degree part is the Thom polynomial)
+# computed-up-to-degree: 8
+# variables: t = cohomological degree; c[i], s[[lambda]] as for Thom polynomials
+# source: not recorded on the old site (to be added)
+# convention: TPP 2025
+# retrieved-from: https://tpp.web.unc.edu/ssm-thom-polynomials-for-l0/ (page modified 2025-05-31)
+# Read into Maple with:  read "ssm_l0.txt":
+SSM_B51_l0_monomial :=
++t^7*( -2*c[1]^2*c[2]*c[3] +2*c[1]*c[2]^3 -4*c[1]*c[2]*c[4] +2*c[1]*c[3]^2 +2*c[2]^2*c[3] -2*c[2]*c[5] +2*c[3]*c[4] )
++t^8*( 10*c[1]^3*c[2]*c[3] -10*c[1]^2*c[2]^3 +27*c[1]^2*c[2]*c[4] -10*c[1]^2*c[3]^2 -14*c[1]*c[2]^2*c[3] -3*c[2]^4 +27*c[1]*c[2]*c[5] -17*c[1]*c[3]*c[4] -6*c[2]^2*c[4] -4*c[2]*c[3]^2 +10*c[2]*c[6] -9*c[3]*c[5] -c[4]^2 )
+:
+SSM_B51_l0_schur :=
++t^7*( 8*s[[4,3]] +4*s[[5,2]] +6*s[[3,2,2]] +6*s[[3,3,1]] +6*s[[4,2,1]] +2*s[[2,2,2,1]] +2*s[[3,2,1,1]] )
++t^8*( -10*s[[2,2,2,1,1]] -13*s[[2,2,2,2]] -10*s[[3,2,1,1,1]] -63*s[[3,2,2,1]] -50*s[[3,3,1,1]] -81*s[[3,3,2]] -50*s[[4,2,1,1]] -93*s[[4,2,2]] -148*s[[4,3,1]] -68*s[[4,4]] -80*s[[5,2,1]] -108*s[[5,3]] -40*s[[6,2]] )
+:

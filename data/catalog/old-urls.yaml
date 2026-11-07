@@ -1,0 +1,51 @@
+# Where each page of the old WordPress site went (old slug -> new path). null = dropped.
+home: {new: "", title: "Home"}
+ordinary-thom-polynomials: {new: "background/thom-polynomials", title: "Thom polynomials"}
+ssm-thom-polynomials: {new: "background/ssm", title: "SSM-Thom polynomials"}
+ktps: {new: "background/k-theory", title: "KTp's"}
+mather-singularities: {new: "singularities/contact", title: "Mather singularities"}
+singularities-in-mathers-nice-dimensions: {new: "singularities/contact", title: "List of Mather singularities"}
+multi-singularity-loci: {new: "singularities/multi", title: "Multi-singularity loci"}
+list-of-multi-singularities-in-the-mather-range: {new: "singularities/multi/mather-range", title: "List of multi-singularities in the Mather range"}
+list-of-multi-singularities-l1: {new: "singularities/multi/list-l1", title: "List of multi-singularities, l=1"}
+hierarchy-of-contact-singularities: {new: "local-algebras/hierarchy", title: "Symmetries and hierarchy of Mather singularities and multi-singularities"}
+symmetry-of-mather-singularities: {new: "local-algebras/symmetries", title: "Symmetry of Mather singularities"}
+large-algebra-collider-lac: {new: "local-algebras/lac", title: "Large Algebra Collider (LAC)"}
+7-dimensional-algebras: {new: "local-algebras/7-dimensional", title: "7 dimensional algebras"}
+tp-linfinity: {new: "tables/thom-series", title: "Thom series"}
+ts-new: {new: "tables/thom-series", title: "Ts new"}
+thom-polynomials-relative-dimension-l0: {new: "tables/tp-l0", title: "Thom polynomials, relative dimension l=0"}
+thom-polynomials-relative-dimension-1: {new: "tables/tp-l1", title: "Thom polynomials, relative dimension l=1"}
+thom-polynomials-relative-dimension-l2: {new: "tables/tp-l2", title: "Thom polynomials, relative dimension l=2"}
+thom-polynomials-relative-dimension-l3: {new: "tables/tp-l3", title: "Thom polynomials, relative dimension l=3"}
+thom-polynomials-relative-dimension-l4: {new: "tables/tp-l4", title: "Thom polynomials, relative dimension l=4"}
+thom-polynomials-relative-dimension-l5: {new: "tables/tp-l5", title: "Thom polynomials, relative dimension l=5"}
+tps-l0: {new: "tables/tp-l0", title: "Tp's, l=0"}
+tps-l1: {new: "tables/tp-l1", title: "Tp's, l=1"}
+ssm-thom-polynomials-for-l0: {new: "tables/ssm-l0", title: "SSM-Thom polynomials for l=0"}
+ssm-thom-polynomials-for-l1: {new: "tables/ssm-l1", title: "SSM-Thom polynomials for l=1"}
+ssm-thom-polynomials-for-l2: {new: "tables/ssm-l2", title: "SSM-Thom polynomials for l=2"}
+ssm-thom-polynomials-for-l3: {new: "tables/ssm-l3", title: "SSM-Thom polynomials for l=3"}
+ssm-thom-polynomials-for-l4: {new: "tables/ssm-l4", title: "SSM-Thom polynomials for l=4"}
+ssm-thom-polynomials-for-l5: {new: "tables/ssm-l5", title: "SSM-Thom polynomials for l=5"}
+ssm-thom-polynomials-for-l6: {new: "tables/ssm-l6", title: "SSM-Thom polynomials for l=6"}
+ssm-tps-l0: {new: "tables/ssm-l0", title: "SSM-Tp's, l=0"}
+ssm-tps-l1: {new: "tables/ssm-l1", title: "SSM-Tp's, l=1"}
+ssm-tp-l2: {new: "tables/ssm-l2", title: "SSM-Tp\u2019s, l=2"}
+ssm-tps-l3: {new: "tables/ssm-l3", title: "SSM-Tp's, l=3"}
+ssm-tps-l4: {new: "tables/ssm-l4", title: "SSM-Tp's, l=4"}
+ktps-l0: {new: "tables/ktp", title: "KTp's, l=0"}
+ktps-l1: {new: "tables/ktp", title: "KTp's, l=1"}
+s0-series: {new: "singularities/multi/empty", title: "S0 series"}
+target-ssm-multi-singularity-thom-polynomials-for-l1: {new: "tables/target-ssm-l1", title: "Target SSM multi-singularity Thom polynomials for l=1"}
+target-ssm-multi-singularity-thom-polynomials-for-l2: {new: "tables/target-ssm-l2", title: "Target SSM multi-singularity Thom polynomials for l=2"}
+target-ssm-multi-singularity-thom-polynomials-for-l3: {new: "tables/target-ssm-l3", title: "Target SSM multi-singularity Thom polynomials for l=3"}
+target-ssm-multi-singularity-thom-polynomials-for-l4: {new: "tables/target-ssm-l4", title: "Target SSM multi-singularity Thom polynomials for l=4"}
+target-ssm-multi-singularity-thom-polynomials-for-l5: {new: "tables/target-ssm-l5", title: "Target SSM multi-singularity Thom polynomials for l=5"}
+441-2: {new: "tables/target-ssm-l1", title: "Target, SSM, multi-singularity, l=1"}
+source-ssm-multi-singularity-l1: {new: "tables/source-ssm-l1", title: "Source, SSM, multi-singularity, l=1"}
+image-milnor-numbers: {new: "derived/image-milnor-numbers", title: "Image Milnor numbers"}
+image-milnor-functions: {new: "derived/image-milnor-numbers", title: "Image Milnor Functions"}
+rrs-codes: {new: "downloads", title: "RR's codes"}
+future: {new: "about", title: "Future"}
+thom-polynomial-wiki-page-test: {new: null, title: "Thom polynomial wiki page --- test"}
